@@ -11,12 +11,16 @@ $icon-font-path: '../fonts/';
 @import "_animate";
 @import "_slick";
 @import "_slick-theme";
+@import "_nice-select";
+@import "_header";
+@import "_footer";
 @import "_page";
-
-
 
 @import "_other.scss";  
 
+@import "_min-768.scss";
+@import "_min-992.scss";
+@import "_min-1025.scss";
 
 @import "_max-767.scss";
 @import "_max-667.scss";

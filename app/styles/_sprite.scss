@@ -16,33 +16,69 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
-.icon-button-icon-g {
+.icon-cart {
   background-image: url(../images/sprite.png);
-  background-position: 0px -51px;
+  background-position: -20px -58px;
   width: 22px;
-  height: 22px;
+  height: 18px;
 }
-.icon-button-icon {
+.icon-fb-footer {
   background-image: url(../images/sprite.png);
-  background-position: -22px -51px;
-  width: 22px;
-  height: 22px;
+  background-position: -20px -38px;
+  width: 20px;
+  height: 20px;
 }
-.icon-list-icon-s-mob {
+.icon-fb-head {
   background-image: url(../images/sprite.png);
-  background-position: -67px -51px;
-  width: 15px;
-  height: 12px;
+  background-position: -24px 0px;
+  width: 20px;
+  height: 20px;
 }
-.icon-logo {
+.icon-insta-footer {
+  background-image: url(../images/sprite.png);
+  background-position: -44px 0px;
+  width: 20px;
+  height: 20px;
+}
+.icon-insta-head {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -38px;
+  width: 20px;
+  height: 20px;
+}
+.icon-menu-close {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -18px;
+  width: 20px;
+  height: 20px;
+}
+.icon-mobile-menu {
   background-image: url(../images/sprite.png);
   background-position: 0px 0px;
-  width: 110px;
-  height: 51px;
+  width: 24px;
+  height: 18px;
 }
-.icon-spiner-icon {
+.icon-tel-footer {
   background-image: url(../images/sprite.png);
-  background-position: -44px -51px;
-  width: 23px;
+  background-position: -64px 0px;
+  width: 20px;
+  height: 20px;
+}
+.icon-viber-footer {
+  background-image: url(../images/sprite.png);
+  background-position: -64px -20px;
+  width: 20px;
+  height: 20px;
+}
+.icon-vk-footer {
+  background-image: url(../images/sprite.png);
+  background-position: 0px -58px;
+  width: 20px;
+  height: 20px;
+}
+.icon-vk-head {
+  background-image: url(../images/sprite.png);
+  background-position: -40px -38px;
+  width: 20px;
   height: 20px;
 }

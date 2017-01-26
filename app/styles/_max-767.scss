@@ -2,6 +2,110 @@ $icon-font-path: '../fonts/';
 
 @media only screen and (max-width: 767px) {
 
+  //HEADER
+
+  .header {
+
+  	.header-top-block {
+  		padding: 12px 0;
+  		border-bottom: 1px solid #ffe3e3;
+  	}
+
+  	//nav
+
+  	.mobile-menu {
+		cursor: pointer;
+		width: 50px;
+		height: 20px;
+
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 15px;
+
+		.icon-mobile-menu {
+			display: inline-block;
+		}
+
+		.icon-menu-close {
+			display: none;
+		}	
+
+	}
+
+	.is-open {
+
+		.icon-mobile-menu {
+			display: none;
+		}
+
+		.icon-menu-close {
+			display: inline-block;
+		}
+
+	}	
+
+	.phone {
+		display: none;
+	}
+		
+		/* mobile nav  */
+
+		.showing {
+			background: #fff;
+			display: block;
+			//align-items: flex-start;
+			//justify-content: flex-start;
+			//flex-direction: column;					
+			font-size: 18px;
+			position: absolute;
+			//top: 37px;
+			left: 0;
+			//height: calc(100% - 50px);			
+			//height: 100vh;
+			width: 100%;
+			transition: height 0.4s;
+			padding: 0 15px;
+			overflow-y: scroll;
+			 -webkit-overflow-scrolling: touch;
+			z-index: 1000;
+		}
+
+		/* end */
+
+		.nav-bar {
+			width:100%;
+			display: block;
+
+			ul {
+				//height: 0;
+				display: none;
+
+				li {
+					box-sizing: border-box;
+					width: 100%;
+					text-align: left;					
+					padding: 13px 0 13px 15px;
+
+					a {
+						font-size: 18px;
+					}
+
+				}
+
+			}	
+
+			ul.showing {
+				display: block;
+			}
+
+		}		
+
+  	//nav end
+
+  }
   
+
+  //END HEADER
   
 }

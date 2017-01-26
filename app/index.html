@@ -23,12 +23,66 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
   
-  <header class="header">
-    
+  <header class="header">    
+    <div class="header-top-block">
+      <div class="container">
+        <div class="row">
+          <div class="header-left-column col-lg-4 col-md-5 col-sm-5 hidden-xs">            
+              <form action="" class="search-form">
+                  <input type="text" class="search" placeholder="Я ищу...">
+              </form>
+              <ul class="net-block">
+                <li><a class="icon icon-insta-head" href=""></a></li>
+                <li><a class="icon icon-vk-head" href=""></a></li>
+                <li><a class="icon icon-fb-head" href=""></a></li>
+              </ul>             
+          </div>
+          <div class="header-center-column col-lg-5 col-md-3 col-sm-3 col-xs-5">
+            <a href="" class="logo">
+              <img src="images/logo.png" alt="">
+            </a>
+          </div>
+          <div class="header-right-column col-lg-3 col-md-4 col-sm-4 col-xs-7">                      
+            <a href="" class="cart-block">
+              <i class="icon icon-cart"></i>
+              <span class="cart-title">5</span>
+            </a>
+            <a class="phone" href="tel:+88000000000">8 (800) 000-00-00</a>           
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom-block">
+      <div class="container">
+        <div class="row">
+          <nav class="navigation" role="navigation"> 
+            <div class="nav-bar">
+              <div class="mobile-menu hidden-sm">
+                <i class="icon icon-mobile-menu"></i>
+                <i class="icon icon-menu-close"></i>
+              </div>
+              
+              <ul>              
+                <li><a  href="#">Главная</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Coздать комплект</a></li>
+                <li><a  href="#">Доставка и оплата</a></li>
+                <li><a  href="#">О нас</a></li>
+                <li><a  href="#">Опт</a></li>
+                <li><a  href="#">Контакты</a></li>
+                <li><a  href="#">Наши новости</a></li>
+                <li><a  href="#">Instashop</a></li>
+              </ul>
+             </div>
+          </nav> 
+        </div>  
+      </div>           
+    </div>
   </header>
   
   <main class="main">
-    
+
+
   </main>
     <!-- build:js scripts/vendor.js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>   
@@ -55,6 +109,7 @@
     <!-- build:js scripts/main.js -->
     <script src="scripts/jquery.smoothscroll.min.js"></script>
     <script src="scripts/jquery.viewportchecker.min.js"></script>
+    <script src="scripts/jquery.nice-select.min.js"></script>
     <script src="scripts/slick.min.js"></script>
     <script src="scripts/main.js"></script>    
     <!-- endbuild -->

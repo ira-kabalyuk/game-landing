@@ -13,5 +13,20 @@ body {
 	padding-right: 0 !important;
 }
 
+.icon {
+	vertical-align: top;
+	display: inline-block;
+}
+
+.clearfix {
+
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+}
+
 
 

@@ -1,0 +1,49 @@
+$icon-font-path: '../fonts/';
+
+@media only screen and (min-width: 768px) {
+
+	.hidden-sm {
+		display: none;
+	}
+
+  //HEADER
+
+  .header {
+
+  	.header-left-column {
+  		margin-left: -15px;
+  	}
+
+  	.search {
+  		width: auto;
+  	}
+
+  	.net-block {
+  		margin-left: 0;
+  	}
+
+  	.header-right-column {
+  		margin-right: -15px;
+  	}
+	
+		.navigation {
+
+			ul {
+
+				li {
+
+					a {
+						font-size: 14px;
+					}
+
+				}
+
+			}
+
+		}
+
+  }
+
+  //END HEADER
+  
+}

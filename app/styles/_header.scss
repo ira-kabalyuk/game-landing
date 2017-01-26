@@ -1,0 +1,130 @@
+$icon-font-path: '../fonts/';
+
+$page-color: #393939;
+$gray-color: #858585;
+$border-color: #d8d8d8;
+$black-color: #111111;
+$blue-color: #3c4f90;
+
+
+.header {
+	color: #8a8a8a;
+	position: relative;
+
+	.header-top-block {
+		padding: 20px 0;
+		border-bottom: 1px solid #f2f2f2;
+	}
+
+	.search-form {
+		float: left;
+		::-webkit-input-placeholder {color: #8a8a8a; font-size: 16px;}
+		::-moz-placeholder          {color: #8a8a8a; font-size: 16px;}/* Firefox 19+ */
+		:-moz-placeholder           {color: #8a8a8a; font-size: 16px;}/* Firefox 18- */
+		:-ms-input-placeholder      {color: #8a8a8a; font-size: 16px;}
+	}	
+
+	.search {
+		border: none;
+		background:  #f2f8f9;
+		font-size: 16px;
+		font-weight: 400;
+		color: $page-color;
+		padding: 9px 14px;
+		border-radius: 5px;		
+	}
+
+	.net-block {
+		float: left;		
+		padding: 8px 0;
+		li {
+			display: inline-block;
+			margin: 0 5px;
+			vertical-align: middle;
+		}
+
+	}
+
+	.header-center-column {
+		text-align: center;
+	}
+
+	.logo {
+		display: inline-block;
+		padding: 2px 0;
+	}
+
+	.header-right-column {
+		float: right;
+	}
+
+	.phone {
+		display: inline-block;
+		float: right;
+		font-size: 16px;
+		font-weight: 400;
+		color: #8a8a8a;
+		padding: 8px 0;
+		text-decoration: none;
+	}
+
+	.cart-block {
+		display: inline-block;
+		float: right;
+		text-decoration: none;
+		margin-left: 25px;
+		padding: 7px 0;
+	}
+
+	.cart-title {
+		display: inline-block;
+		font-size: 14px;
+		font-weight: 400;
+		color: #fff;
+		background: #7f73d2;
+		padding: 2px 0;
+		border-radius: 50%;
+		min-width: 22px;
+		height: 22px;
+		text-align: center;
+		vertical-align: middle;
+	}
+
+	//nav
+
+	.navigation {
+
+		ul {
+			width: 100%;
+			text-align: justify;
+			padding: 15px 0;
+
+			&:after {
+				content: "";
+				display: inline-block;
+				width: 100%;
+			}
+
+			li {
+				display: inline-block;
+
+				a {					
+					color: #8a8a8a;
+					font-weight: 600;
+					text-decoration: none;
+
+					&:hover,
+					&:focus,
+					&:active {
+						text-decoration: none;
+						color: #2e4288;
+					}
+				}
+
+			}
+
+		}
+
+	}
+
+}
