@@ -11,6 +11,10 @@ $blue-color: #3c4f90;
 	color: #8a8a8a;
 	position: relative;
 
+	.container {
+		position: relative;
+	}
+
 	.header-top-block {
 		padding: 20px 0;
 		border-bottom: 1px solid #f2f2f2;
@@ -74,6 +78,7 @@ $blue-color: #3c4f90;
 		text-decoration: none;
 		margin-left: 25px;
 		padding: 7px 0;
+		cursor: pointer;
 	}
 
 	.cart-title {

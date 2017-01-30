@@ -20,7 +20,7 @@ $icon-font-path: '../fonts/';
 
 		position: absolute;
 		top: 50%;
-		transform: translateY(-50%);
+		transform: translateY(-200%);
 		left: 15px;
 
 		.icon-mobile-menu {
@@ -102,6 +102,53 @@ $icon-font-path: '../fonts/';
 		}		
 
   	//nav end
+
+  }
+
+  //CART
+
+  .cart {
+  	width: 100%;
+  	border-radius: 0;
+  	border-bottom: 1px solid #ffe3e3;
+
+  	&:after {
+  		content: "";
+  		display: none;
+  	}
+
+  	.cart-item {
+  		position: relative;
+
+			&:last-child {
+				border-bottom: none;
+			}
+
+  	}
+
+  	.delete-link {
+  		display: none;
+  	}
+
+  	.icon-cart-close {
+  		position: absolute;
+  		right: 0;
+  		top: 50%;
+  		transform: translateY(-50%);
+  		display: block;
+  	}
+
+  	.cart-button {
+  		background: #8474d6;
+  		color: #fff;
+  		border-radius: 3px;
+			font-weight: 400;
+			letter-spacing: normal;
+			max-width: 290px;
+			display: block;
+			margin: 10px auto 0;
+			padding: 11px 0;
+  	}
 
   }
   

@@ -53,6 +53,35 @@ jQuery(document).ready(function() {
 
   //nav end 
 
+  //cart
+
+  $(".cart-block").click(function( e ) {
+        e.stopPropagation();
+        $(".cart").toggleClass("is-emersione");
+    }); 
+
+
+    $("body").click(function(e) { 
+      var div = $(".cart"); 
+      if (!div.is(e.target) 
+          && !div.has(e.target).length) { 
+        div.removeClass("is-emersione"); 
+      }
+    });
+
+ //cart button
+
+  $(".delete-link").click(function( e ) {       
+       $(this).parents(".cart-item").addClass("is-close");
+    });
+
+  $(".icon-cart-close").click(function( e ) {       
+       $(this).parents(".cart-item").addClass("is-close");
+    });
+
+
+
+
 
     $('.button2').click(function() {       
       var count = parseInt($('.counter').text()) +1;      
