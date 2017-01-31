@@ -1,6 +1,10 @@
 $icon-font-path: '../fonts/';
 
 @media only screen and (min-width: 1025px) {
+	
+	body {
+		overflow-x: visible; 
+	}
 
    //HEADER
 
@@ -33,5 +37,7 @@ $icon-font-path: '../fonts/';
   }
 
   //END HEADER
+
+  
   
 }

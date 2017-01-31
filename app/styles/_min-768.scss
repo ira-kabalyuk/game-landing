@@ -2,6 +2,10 @@ $icon-font-path: '../fonts/';
 
 @media only screen and (min-width: 768px) {
 
+  body {
+    overflow-x: hidden; 
+  }
+
 	.hidden-sm {
 		display: none;
 	}
@@ -45,5 +49,31 @@ $icon-font-path: '../fonts/';
   }
 
   //END HEADER
+
+  //MAIN-PAGE
+
+  .main-page {
+
+    .slider-big-img {
+      display: block;
+    }
+
+    .slider-min-img {
+      display: none;
+    }
+
+    //section-2
+
+    .content-item {
+      width: calc(50% - 30px);
+      margin: 0 15px 30px;   
+    }
+
+    //end section-2
+
+  } 
+
+//END MAIN-PAGE 
+  
   
 }

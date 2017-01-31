@@ -1,10 +1,26 @@
 $icon-font-path: '../fonts/';
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) {	
 
 .hidden-md {
 		display: none;
 	}
+
+	//MAIN-PAGE 
+
+  .main-page {
+
+  	 //section-2
+
+		.content-item {
+	  		width: calc(33.333333% - 30px);
+	  		margin: 0 15px 45px;    
+		}
+
+		//end section-2
+  }		
+
+	//END MAIN-PAGE	
   
   
 }
