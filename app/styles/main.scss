@@ -15,7 +15,7 @@ $icon-font-path: '../fonts/';
 @import "_header";
 @import "_footer";
 @import "_cart-popup";
-@import "_page";
+@import "_main-page";
 
 @import "_other.scss";  
 
@@ -25,5 +25,6 @@ $icon-font-path: '../fonts/';
 
 @import "_max-767.scss";
 @import "_max-667.scss";
+@import "_max-540.scss";
 @import "_max-375.scss";
   

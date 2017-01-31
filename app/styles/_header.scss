@@ -102,21 +102,29 @@ $blue-color: #3c4f90;
 		ul {
 			width: 100%;
 			text-align: justify;
-			padding: 15px 0;
+			height: 50px;
 
 			&:after {
 				content: "";
 				display: inline-block;
 				width: 100%;
+				height: 100%;
 			}
 
 			li {
 				display: inline-block;
+				height: 100%;
+				vertical-align: middle;
+				
 
 				a {					
 					color: #8a8a8a;
 					font-weight: 600;
 					text-decoration: none;
+					display: inline-block;
+					height: 100%;
+					line-height: 3.5em;
+					vertical-align: middle;
 
 					&:hover,
 					&:focus,

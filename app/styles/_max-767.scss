@@ -54,16 +54,12 @@ $icon-font-path: '../fonts/';
 		.showing {
 			background: #fff;
 			display: block;
-			//align-items: flex-start;
-			//justify-content: flex-start;
-			//flex-direction: column;					
+			//height: 100%;							
 			font-size: 18px;
-			position: absolute;
-			//top: 37px;
-			left: 0;
-			//height: calc(100% - 50px);			
-			//height: 100vh;
+			position: absolute;			
+			left: 0;			
 			width: 100%;
+
 			transition: height 0.4s;
 			padding: 0 15px;
 			overflow-y: scroll;
@@ -78,17 +74,22 @@ $icon-font-path: '../fonts/';
 			display: block;
 
 			ul {
-				//height: 0;
+				height: auto;
 				display: none;
 
 				li {
 					box-sizing: border-box;
 					width: 100%;
 					text-align: left;					
-					padding: 13px 0 13px 15px;
+					padding: 10px 0 10px 0;
+
+					&:first-child {
+						padding-top: 25px;
+					}
 
 					a {
 						font-size: 18px;
+						line-height: normal;
 					}
 
 				}
@@ -111,6 +112,10 @@ $icon-font-path: '../fonts/';
   	width: 100%;
   	border-radius: 0;
   	border-bottom: 1px solid #ffe3e3;
+  	top: 49px;
+  	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
 
   	&:after {
   		content: "";
@@ -150,9 +155,30 @@ $icon-font-path: '../fonts/';
 			padding: 11px 0;
   	}
 
-  }
-  
+  } 
 
   //END HEADER
+
+  //MAIN-PAGE
+
+	.main-page {
+
+		.slider-center-block {
+			
+		}
+
+		.slider-big-img {
+			display: none;
+ 		}
+
+		.slider-min-img {
+			display: block;
+ 		}
+
+
+
+	}	
+
+	//END MAIN-PAGE
   
 }

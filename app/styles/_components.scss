@@ -13,6 +13,19 @@ body {
 	padding-right: 0 !important;	
 }
 
+.col-left {
+	padding-left: 0;
+}
+
+.col-right {
+	padding-right: 0;
+}
+
+.col-center {
+	padding-left: 0;
+	padding-right: 0;
+}
+
 .icon {
 	vertical-align: top;
 	display: inline-block;
@@ -24,6 +37,37 @@ body {
 		content: "";
 		display: table;
 		clear: both;
+	}
+
+}
+
+.title {
+	font-size: 24px;
+	font-weight: 600;
+	color: #fff;
+	text-align: center;
+	line-height: 1.2em;
+}
+
+.content {
+	padding: 3.6rem 0;
+}
+
+.content-title {
+	font-size: 16px;
+	font-weight: 700;
+	color: #727272;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+
+	&:after {
+		content: "";
+		display: block;
+		margin: 37px auto 0;
+		width: 73px;
+		height: 2px;
+		background: #727272;
 	}
 
 }

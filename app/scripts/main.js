@@ -3,21 +3,13 @@ console.log('\'Allo \'Allo!');
  
 jQuery(document).ready(function() {
 
-    $('.slider-for').slick({
+   $('.head-slider').slick({
+      infinite: true,
+      arrows: false,
+      dots: true,
       slidesToShow: 1,
       slidesToScroll: 1,
-      arrows: false,
-      fade: true,
-      asNavFor: '.slider-nav'
-    });
-
-    $('.slider-nav').slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      asNavFor: '.slider-for',
-      dots: false,      
-      focusOnSelect: true,
-      arrows: true,
+      accessibility: false,
     });
 
 
