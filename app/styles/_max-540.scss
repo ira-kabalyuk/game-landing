@@ -36,7 +36,141 @@ $blue-color: #3c4f90;
 
 		//end section-2	
 
+		//section-4
+
+		.slider-content {
+			margin-top: 50px;
+
+			.slick-prev {
+			background: #ffcece;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+
+			bottom: -60px;
+			left: 15px;
+			top: auto;
+			margin-top: 0;
+			z-index: 10;
+
+			&:after {
+				content: "";
+				display: block;
+				width: 8px;
+				height: 8px;
+				background: transparent;
+				border-top: 2px solid #acacac;
+				border-left: 2px solid #acacac;
+				transform: rotate(-45deg);
+
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-left: -4px;
+				margin-top: -4px;				
+			}
+
+		}
+
+		.slick-next {
+			background: #ffcece;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+
+			bottom: -60px;
+			right: 15px;
+			top: auto;
+			margin-top: 0;
+			z-index: 10;
+
+			&:after {
+				content: "";
+				display: block;
+				width: 8px;
+				height: 8px;
+				background: transparent;
+				border-top: 2px solid #acacac;
+				border-left: 2px solid #acacac;
+				transform: rotate(135deg);
+
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-left: -4px;
+				margin-top: -4px;				
+			}
+
+		}
+
+			.slick-dots {
+				bottom: -50px;
+			}
+
+		}
+
+		.feedback-item {			
+
+		}
+
+  	.feedback-left-block {
+	  	text-align: center;
+	  	display: block;
+	  	margin: 0 auto;
+	  	width: 235px;
+
+	  	.img-wrap {
+	  		float: left;
+	  		width: 100px;
+	  		height: 100px;
+	  	}
+
+	  	.user-name {
+				display: inline-block;
+				margin: 0;
+				margin-bottom: 15px;
+				font-size: 18px;
+				text-align: left;
+			}
+
+  	}
+
+  	.feedback-right-block {
+  		width: 100%;
+  		margin-left: 0px;
+
+			.user-name {
+				display: none;
+			}
+
+  	}
+
+  	.feedback-text {
+  		background: transparent;
+  		border-bottom: 13px solid transparent;
+    	border-top: 13px solid transparent;
+    	max-width: 100%;
+    	text-align: center;
+  	}
+
+  	.feedback-link {
+			margin-top: 0;
+			margin-left: 20px;
+  	}
+
+  //end section-4
+
+  //section-5
+
+	  .block-title {
+	  	width: 300px;
+	  	margin: 0 auto;
+	  }
+
 	}	
+
+	//end section-5
+
 
 	//END MAIN-PAGE
 

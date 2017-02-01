@@ -311,6 +311,19 @@ $blue-color: #3c4f90;
 
 	//end section-3
 
+	 //section-4
+
+  .feedback-item {    
+    text-align: center;
+
+    &:nth-child(2n) {
+      text-align: center;
+    }
+
+  }  
+
+  //end section-4
+
 	}	
 
 	//END MAIN-PAGE

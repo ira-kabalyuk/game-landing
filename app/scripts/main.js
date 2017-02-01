@@ -25,6 +25,37 @@ jQuery(document).ready(function() {
 
    }
 
+   $('.slider-content').slick({
+      infinite: true,
+      arrows: false,
+      dots: true,
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      accessibility: false,
+
+        responsive: [
+            {
+              breakpoint: 769,
+              settings: {
+                arrows: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,               
+              }
+            },
+
+            {
+              breakpoint: 767,
+              settings: {
+                arrows: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,               
+              }
+            },
+        ]    
+    });
+
 
     $('.post').addClass("is-hidden").viewportChecker({
         classToAdd: 'visible animated fadeIn',
