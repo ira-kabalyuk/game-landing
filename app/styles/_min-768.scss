@@ -88,6 +88,30 @@ $blue-color: #3c4f90;
 
   } 
 
-//END MAIN-PAGE   
+//END MAIN-PAGE  
+
+//FOOTER
+
+  .footer {
+    padding: 45px 0;
+
+    #tab1 {
+      width: 20%;
+      float: left;    
+    }
+
+    #tab2 {
+      width: 20%;
+      float: left;    
+    }
+
+    #tab3 {
+      width: 18%;
+      float: right;
+    }
+
+  } 
+
+  //END FOOTER 
   
 }

@@ -324,8 +324,32 @@ $blue-color: #3c4f90;
 
   //end section-4
 
-	}	
+	}
 
 	//END MAIN-PAGE
+
+	//FOOTER
+
+	.footer {
+		padding: 45px 15px;
+
+		#tab1 {
+	 		width: 30%;
+	 		float: left; 		
+ 		}
+
+ 		#tab2 {
+	 		width: 30%;
+	 		float: left; 		
+ 		}
+
+ 		#tab3 {
+	 		width: 30%;
+	 		float: right;
+ 		}
+
+	}	
+
+	//END FOOTER
   
 }

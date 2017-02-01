@@ -1,20 +1,38 @@
 $icon-font-path: '../fonts/';
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 541px) {
 
+	//FOOTER
+
+ .footer {
  
+ 	.tab_content {
+ 		display: block !important;
+
+ 		.footer-net-list {
+ 			display:block;
+ 		}
+
+ 		.footer-button {
+			display: inline-block;
+		}
+
+ 	}
+
+ 	.tab_drawer_heading {
+ 		display: none;
+ 	}
+ 	
+
+ 	.footer-mobile-block {
+		display: none;
+	}
+
+ }
+
+ //END FOOTER
+
   
 }
 
-
-@media only screen and (min-width: 992px) {
-
- 
-}
-
-
-@media only screen and (min-width: 1200px) {
-  
-  
-}
 

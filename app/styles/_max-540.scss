@@ -174,5 +174,109 @@ $blue-color: #3c4f90;
 
 	//END MAIN-PAGE
 
+	//FOOTER
+
+.footer {
+	padding: 20px 0;
+
+	.footer-title {
+		display: none;
+	}
+
+	#tab1, #tab2, #tab3 {
+		width: 100%;
+		float: none;
+	}
+
+	.tab_content {
+
+		.footer-net-list {
+			display: none;
+		}
+
+		.footer-button {
+			display: none;
+		}
+
+	}
+	
+	.tab_drawer_heading {		
+		color: #fff;
+		font-size: 16px;
+		border-top: 1px solid #4f4949;
+		margin: 0;
+		padding: 17px 15px;
+		display: block;
+		cursor: pointer;
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+
+		position: relative;
+
+		&:after {
+			content: "";
+	    display: block;
+	    width: 8px;
+	    height: 8px;
+	    background: transparent;
+	    border-top: 2px solid #b4adad;;
+	    border-left: 2px solid #b4adad;;
+	    -webkit-transform: rotate(225deg);
+	    transform: rotate(225deg);
+	    position: absolute;
+	    top: 50%;
+	    right: 15px;	    
+	    margin-top: -4px;
+		}
+
+	}
+
+	.d_active {		
+		color: #fff;
+
+		&:after {
+			content: "";
+	    display: block;
+	    width: 8px;
+	    height: 8px;
+	    background: transparent;
+	    border-top: 2px solid #b4adad;;
+	    border-left: 2px solid #b4adad;;
+	    -webkit-transform: rotate(45deg);
+	    transform: rotate(45deg);
+	    position: absolute;
+	    top: 50%;
+	    right: 15px;	    
+	    margin-top: -4px;
+		}
+
+	}
+
+	.tab_content-list {
+		padding: 0 15px 15px 15px;
+	}
+
+	.footer-mobile-block {
+		display: block;
+		margin-top: 40px;
+		width: 170px;
+		margin: 0 auto;
+		text-align: center;
+
+		.footer-net-list {
+			margin-top: 20px;
+		}
+
+	}
+
+}
+
+//END FOOTER
+
  
 }
+
