@@ -1,10 +1,12 @@
 $icon-font-path: '../fonts/';
 
-@media only screen and (min-width: 768px) {
+$page-color: #393939;
+$gray-color: #858585;
+$border-color: #d8d8d8;
+$black-color: #111111;
+$blue-color: #3c4f90;
 
-  body {
-    overflow-x: hidden; 
-  }
+@media only screen and (min-width: 768px) {  
 
 	.hidden-sm {
 		display: none;

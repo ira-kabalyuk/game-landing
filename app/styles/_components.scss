@@ -10,7 +10,10 @@ body {
 	font-family: 'ApercuPro';
 	font-weight: 400;
 	background: #fff;
-	padding-right: 0 !important;	
+	padding-right: 0 !important;
+	overflow-x: hidden; 
+	min-width: 320px;
+		
 }
 
 .col-left {

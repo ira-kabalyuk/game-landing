@@ -12,6 +12,19 @@ jQuery(document).ready(function() {
       accessibility: false,
     });
 
+   if ($('html').width() < 767) {
+
+    $('.responsive-slider').slick({
+      infinite: true,
+      arrows: true,
+      dots: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      accessibility: false,
+    });
+
+   }
+
 
     $('.post').addClass("is-hidden").viewportChecker({
         classToAdd: 'visible animated fadeIn',
