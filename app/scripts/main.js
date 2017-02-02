@@ -242,7 +242,7 @@ jQuery(document).ready(function() {
    $(".filter-mobile-menu").click(function( e ) {
         e.stopPropagation();
         $(".filter-mobile-menu").toggleClass("open");
-    }); 
+    });    
 
   //end right-column      
 

@@ -504,6 +504,10 @@ $blue-color: #3c4f90;
 			width: 100%;
 		}
 
+		.filter-wrap {
+
+		}
+
 		.filter-mobile-menu {
 
 			&.open {
@@ -590,7 +594,14 @@ $blue-color: #3c4f90;
     		width: 290px;
     		}
 
-    	}    		
+    	} 
+
+    	.color-button {
+				width: 290px;
+				color: #fff;
+				border: none;				
+			}
+   		
 
 		}
 
