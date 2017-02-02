@@ -28,7 +28,7 @@ $blue-color: #3c4f90;
 				li {
 
 					a {
-						font-size: 14px;
+						font-size: 16px;
 					}
 
 				}
@@ -41,6 +41,24 @@ $blue-color: #3c4f90;
 
   //END HEADER
 
-  
+  //CATALOG-PAGE
+
+  .catalog-page {
+
+    .catalog-menu-item {
+
+      a {
+        font-size: 16px;
+      }
+
+    }
+
+   .filter-list {         
+      text-align: justify;
+    }   
+
+  }  
+
+  //END CATALOG-PAGE
   
 }

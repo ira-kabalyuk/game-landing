@@ -113,5 +113,58 @@ $blue-color: #3c4f90;
   } 
 
   //END FOOTER 
+
+  //CATALOG-PAGE
+
+  .catalog-page {
+
+    .catalog-menu {
+
+      .nice-select {
+        display: none;
+      }
+
+      select {
+        display: none;
+      }
+
+    }
+
+    .catalog-menu-item {
+
+      a {
+        font-size: 14px;
+      }
+
+    }
+
+    .page-menu {
+
+       .nice-select {
+        display: none;
+      }
+
+      select {
+        display: none;
+      }
+      
+    }
+
+    //right-column
+
+      .right-column {             
+      
+      }
+
+      .filter-list {         
+        text-align: left;
+      }   
+
+      //end right-column
+
+
+  }  
+
+  //END CATALOG-PAGE
   
 }

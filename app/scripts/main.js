@@ -160,7 +160,91 @@ jQuery(document).ready(function() {
     });
 
 
+  //catalog-menu
 
+   $(".catalog-menu-list li").click(function( e ) {        
+       $(".catalog-menu-list li").removeClass("menu-active")
+        $(this).addClass("menu-active");
+       
+    });
+
+   //mob
+
+    // Create the dropdown base
+      $("<select />").appendTo(".catalog-menu");
+
+      // Create default option "Go to..."
+      $("<option />", {
+         "selected": "selected",
+         "value"   : "",
+         "text"    : "Постельное белье"
+      }).appendTo(".catalog-menu select");
+
+      // Populate dropdown with menu items
+      $(".catalog-menu a").each(function() {
+       var el = $(this);
+       $("<option />", {
+           "value"   : el.attr("href"),
+           "text"    : el.text()
+       }).appendTo(".catalog-menu select");
+
+      });
+
+      $(".catalog-menu select").change(function() {
+        window.location = $(this).find("option:selected").val();
+      }); 
+
+  //catalog-menu-end
+
+  // nice-select
+
+      $(document).ready(function() {
+      $('select').niceSelect();
+    });
+
+  // end nice-select 
+
+  //left-column
+
+  // Create the dropdown base
+      $("<select />").appendTo(".page-menu");
+
+      // Create default option "Go to..."
+      $("<option />", {
+         "selected": "selected",
+         "value"   : "",
+         "text"    : "Всё"
+      }).appendTo(".page-menu select");
+
+      // Populate dropdown with menu items
+      $(".page-menu a").each(function() {
+       var el = $(this);
+       $("<option />", {
+           "value"   : el.attr("href"),
+           "text"    : el.text()
+       }).appendTo(".page-menu select");
+
+      });
+
+      $(".page-menu select").change(function() {
+        window.location = $(this).find("option:selected").val();
+      }); 
+
+  //end left-column
+
+  //right-column
+
+   $('.filter-mobile-menu').click( function() {
+    $('.filter-list').toggleClass("is-show");
+
+  });
+
+   $(".filter-mobile-menu").click(function( e ) {
+        e.stopPropagation();
+        $(".filter-mobile-menu").toggleClass("open");
+    }); 
+
+  //end right-column      
 
 
     $('.button2').click(function() {       

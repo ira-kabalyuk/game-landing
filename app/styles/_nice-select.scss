@@ -34,7 +34,7 @@ $arrow_color: $gray !default;
   padding-left: $dropdown_padding;
   padding-right: $dropdown_padding + 12;
   position: relative;
-  text-align: left !important;
+  text-align: left;
   transition: all 0.2s ease-in-out;
   user-select: none;
   white-space: nowrap;
@@ -46,7 +46,7 @@ $arrow_color: $gray !default;
     border-color: $primary_light;
   }
   // Arrow
-  &:after { 
+ /* &:after { 
     border-bottom: 2px solid $arrow_color;
     border-right: 2px solid $arrow_color;
     content: '';
@@ -61,13 +61,13 @@ $arrow_color: $gray !default;
     transform: rotate(45deg);
     transition: all 0.15s ease-in-out;
     width: 5px;
-  }
+  }*/
   
   &.open {
-    @extend :active;
+   /* @extend :active;
     &:after {
       transform: rotate(-135deg);
-    }
+    }*/
     .list {
       opacity: 1;
       pointer-events: auto;
@@ -113,7 +113,7 @@ $arrow_color: $gray !default;
   }
   
   // List and options
-  .list {
+ .list {
     background-color: #fff;
     border-radius: $input_border_radius;
     box-shadow: 0 0 0 1px rgba($gray_dark, .11);
