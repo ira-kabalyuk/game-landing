@@ -280,15 +280,14 @@ jQuery(document).ready(function() {
 
   //end right-column 
 
+  //product-filter
 
-
-
-    $('.button2').click(function() {       
+    $('.right-btn').click(function() {       
       var count = parseInt($('.counter').text()) +1;      
       $('.counter').text(count);      
     });
   
-    $('.button1').click(function() {      
+    $('.left-btn').click(function() {      
       var count = parseInt($('.counter').text()) -1;
       if(count < 0) {
         return;
