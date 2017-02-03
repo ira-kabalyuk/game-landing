@@ -135,6 +135,26 @@ body {
 		vertical-align: middle;
 	}
 
+	.catalog-button {
+		background: #8474d6;
+		display: inline-block;
+		height: 42px;
+		color: #fff;
+		font-size: 16px;
+		font-weight: 700;
+		text-align: center;
+		padding: 11px 0;
+
+			&:hover,
+			&:focus,
+			&:active {
+				text-decoration: none;
+				color: #fff;
+				background: rgba(132,116,214,0.8);
+				transition: background .5s ease;
+			}
+	}
+
 
 
 

@@ -502,6 +502,7 @@ $blue-color: #3c4f90;
 			margin-top: 0;
 			float: none;	
 			width: 100%;
+			//max-width: 100%;
 		}
 
 		.filter-wrap {
@@ -606,6 +607,14 @@ $blue-color: #3c4f90;
 		}
 
 		//end right-column
+
+		//catalog
+
+		.catalog-block {
+			margin-top: 30px;
+		}
+
+		//end catalog
   
 	}
 

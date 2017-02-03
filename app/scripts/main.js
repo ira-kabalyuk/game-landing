@@ -242,7 +242,22 @@ jQuery(document).ready(function() {
    $(".filter-mobile-menu").click(function( e ) {
         e.stopPropagation();
         $(".filter-mobile-menu").toggleClass("open");
-    });    
+    });
+
+    /*$(".filter-item .color-button").click(function( e ) {
+        e.stopPropagation();
+        $(".filter-list").removeClass("is-show");
+    });  */
+
+    //paging
+
+     $(".paging li").click(function( e ) {        
+       $(".paging li").removeClass("page-active")
+        $(this).addClass("page-active");
+       
+    });  
+
+    //end paging   
 
   //end right-column      
 
