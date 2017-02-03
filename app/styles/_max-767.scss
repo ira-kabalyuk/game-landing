@@ -17,6 +17,10 @@ $blue-color: #3c4f90;
   		border-bottom: 1px solid #ffe3e3;
   	}
 
+  	.header-bottom-block {
+  		border-bottom: none;
+  	}
+
   	//nav
 
   	.mobile-menu {
@@ -371,7 +375,8 @@ $blue-color: #3c4f90;
 	    	border: none;
 	    	border-bottom: 1px solid #ffe3e3;
 	    	width: 100%;
-	    	text-align: center;			
+	    	text-align: center;	
+	    	height: auto;		
 
 				&.open {	    	
 

@@ -56,6 +56,25 @@ jQuery(document).ready(function() {
         ]    
     });
 
+   $('.product-slider-for').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.product-slider-nav'
+       });
+
+      $('.product-slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.product-slider-for',
+        dots: true,
+        centerMode: true,
+        focusOnSelect: true
+      });
+
+   
+
    //footer tab
 
     // tabbed content
@@ -259,7 +278,9 @@ jQuery(document).ready(function() {
 
     //end paging   
 
-  //end right-column      
+  //end right-column 
+
+
 
 
     $('.button2').click(function() {       

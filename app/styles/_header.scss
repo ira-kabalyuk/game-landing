@@ -20,6 +20,10 @@ $blue-color: #3c4f90;
 		border-bottom: 1px solid #f2f2f2;
 	}
 
+	.header-bottom-block {
+		border-bottom: 1px solid #f2f2f2;	
+	}
+
 	.search-form {
 		float: left;
 		::-webkit-input-placeholder {color: #8a8a8a; font-size: 16px;}
@@ -146,7 +150,7 @@ $blue-color: #3c4f90;
 		color: #9f64a7;
 		margin-top: 7px;		
 		margin-left: 40px;
-    text-align: left;
+    	text-align: left;
 	}
 
 }
