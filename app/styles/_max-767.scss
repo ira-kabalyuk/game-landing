@@ -625,5 +625,46 @@ $blue-color: #3c4f90;
 
 //END CATALOG-PAGE
 
+//PRODUCT-PAGE
+
+.product-page {
+
+
+	.page-content {
+		padding: 0 15px;
+	}	
+
+		.left-column {
+			margin: 0 auto 0 0;
+			float: none;
+			width: 260px;			
+		}
+
+		.right-column {
+			width: 100%;
+			float: none;
+		}
+
+		.product-slider-for {
+			height: 222px;
+		}
+
+		.product-slider-nav {
+
+		.img-wrap {
+			width: 60px !important;
+			height: 60px;
+			}
+
+		}
+
+		.slider-product-content {
+			width: 810px; 
+		}
+
+	}	
+
+//END PRODUCT-PAGE
+
 
 }

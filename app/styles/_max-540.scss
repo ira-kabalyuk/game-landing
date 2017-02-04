@@ -293,7 +293,41 @@ $blue-color: #3c4f90;
 
 	}		
 
-//END CATALOG-PAGE		
+//END CATALOG-PAGE	
+
+//PRODUCT-PAGE
+
+.product-page {
+
+	.left-column {
+		width: 100%;
+		margin: 0 auto;
+	}	
+
+	.product-filter-item {
+		width: 100%;
+		margin-right: 0;
+		text-align: left;
+		margin-bottom: 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+	}
+
+	.catalog-button {
+			display: block;
+			margin: 24px auto 0;
+		}
+
+	.filter-title {
+			text-align: left;
+		}	
+
+	}
+
+//END PRODUCT PAGE	
 
  
 }

@@ -73,48 +73,100 @@ jQuery(document).ready(function() {
         focusOnSelect: true
       });
 
-   
+
+   $('.slider-product-content').slick({
+      infinite: true,
+      arrows: true,      
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      accessibility: false,
+
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: { 
+                dots: true,
+                arrows: false,                                   
+              }
+            },
+
+            {
+              breakpoint: 540,
+              settings: {                             
+                slidesToShow: 1,
+                slidesToScroll: 1,                             
+              }
+            },
+        ]    
+    });
+
+   $('.slider-product-content-1').slick({
+      infinite: true,
+      arrows: true,      
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      accessibility: false,
+
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: { 
+                dots: true,
+                arrows: false,                                   
+              }
+            },
+
+            {
+              breakpoint: 540,
+              settings: {                             
+                slidesToShow: 1,
+                slidesToScroll: 1,                             
+              }
+            },
+        ]    
+    });
+
 
    //footer tab
 
     // tabbed content
     // http://www.entheosweb.com/tutorials/css/tabs.asp
-    $(".tab_content").hide();
-    $(".tab_content:first").show();
+    $(".footer .tab_content").hide();
+    $(".footer .tab_content:first").show();
 
   /* if in tab mode */
-    $("ul.tabs li").click(function() {
+    $(".footer ul.tabs li").click(function() {
     
-      $(".tab_content").hide();
+      $(".footer .tab_content").hide();
       var activeTab = $(this).attr("rel"); 
       $("#"+activeTab).fadeIn();    
     
-      $("ul.tabs li").removeClass("active");
+      $(".footer ul.tabs li").removeClass("active");
       $(this).addClass("active");
 
-    $(".tab_drawer_heading").removeClass("d_active");
-    $(".tab_drawer_heading[rel^='"+activeTab+"']").addClass("d_active");
+    $(".footer .tab_drawer_heading").removeClass("d_active");
+    $(".footer .tab_drawer_heading[rel^='"+activeTab+"']").addClass("d_active");
     
     });
   /* if in drawer mode */
-  $(".tab_drawer_heading").click(function() {
+  $(".footer .tab_drawer_heading").click(function() {
       
-      $(".tab_content").hide();
+      $(".footer .tab_content").hide();
       var d_activeTab = $(this).attr("rel"); 
       $("#"+d_activeTab).fadeIn();
     
-    $(".tab_drawer_heading").removeClass("d_active");
+    $(".footer .tab_drawer_heading").removeClass("d_active");
       $(this).addClass("d_active");
     
-    $("ul.tabs li").removeClass("active");
-    $("ul.tabs li[rel^='"+d_activeTab+"']").addClass("active");
+    $(".footer ul.tabs li").removeClass("active");
+    $(".footer ul.tabs li[rel^='"+d_activeTab+"']").addClass("active");
     });
   
   
   /* Extra class "tab_last" 
      to add border to right side
      of last tab */
-  $('ul.tabs li').last().addClass("tab_last");
+  $('.footer ul.tabs li').last().addClass("tab_last");
   
 
    //end footer tab
@@ -293,7 +345,36 @@ jQuery(document).ready(function() {
         return;
         }
       $('.counter').text(count);        
-    });   
+    });
+
+  //product tab    
+    
+    $.fn.responsiveTabs = function() {
+
+    return this.each(function() {
+      var el = $(this),
+          tabs = el.find('dt'),
+          content = el.find('dd'),
+          placeholder = $('<div class="responsive-tabs-placeholder"></div>').insertAfter(el);
+
+      tabs.on('click', function() {
+        var tab = $(this);
+
+        tabs.not(tab).removeClass('active');
+        tab.addClass('active');
+
+        placeholder.html( tab.next().html() );
+      });
+
+      tabs.filter(':first').trigger('click');
+    });
+
+  }
+
+
+  $('.responsive-tabs').responsiveTabs();
+
+   //end product tab   
 
 });
 

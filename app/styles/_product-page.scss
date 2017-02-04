@@ -210,6 +210,20 @@ $blue-color: #3c4f90;
 				color: #426995;
 				min-height: 35px;
 				line-height: 35px;
+
+					a {
+						font-size: 15px;
+						font-weight: 700;
+						color: #426995;
+
+						&:hover,
+						&:focus,
+						&:active {
+							text-decoration: none;
+							color: #426995;
+						}
+
+					}
 				
 				}
 
@@ -225,6 +239,12 @@ $blue-color: #3c4f90;
 
 	.counter-item {
 		display: inline-block;
+		margin-right: 30px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
 	}
 
 	.counter-wrap {
@@ -270,6 +290,160 @@ $blue-color: #3c4f90;
 		padding: 11px 0;
 		font-weight: 700;
 	}
+
+	.price-value {
+		font-size: 20px;
+		font-weight: 400;
+		color: $page-color;
+		height: 42px;
+		padding: 12px 0;
+	}
+
+	.catalog-button {
+		width: 228px;
+		margin-top: 24px;
+	}
+
+	.icon-button {
+		margin-right: 16px;		
+	}
+
+	.description-tab-block {
+		margin-top: 25px;
+	}
+
+	//tabs	
+
+	.responsive-tabs {
+		border: 1px solid $border-color;
+		
+
+		  dt {
+	    //padding: 0.5em;
+	    //border-top: 1px solid #ccc;
+	    cursor: pointer;
+	    padding: 10px 15px;
+
+	    text-transform: uppercase;
+		  color: #8a8a8a;
+		  font-size: 13px;
+		  font-weight: 700;
+		  letter-spacing: 1px;
+		  border-top: 1px solid $border-color;
+
+		  &:first-child {    		
+    		border-top: 0;   
+		  }
+
+		  &.active {
+	    background-color: transparent;
+			text-transform: uppercase;
+		  color: #2e4288;
+		  font-size: 13px;
+		  font-weight: 700;
+		  letter-spacing: 1px;
+		  border-bottom: 1px solid $border-color;
+    	}
+
+    }    
+
+    dd {
+   	 display: none;    
+    }
+
+    .active + dd {
+	    display: block;	   
+	    padding: 15px 10px;
+   	}
+  }  
+
+	.responsive-tabs-placeholder {
+  	display: none;
+
+  	 p {
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 1.5em;
+			color: $black-color;		
+		}
+
+  } 
+
+	//tabs end	
+
+	//section-1
+
+	.section-1 {
+		background: #fff8f8;
+		padding: 3.6rem 0;
+	}
+
+	.slider-product-content, .slider-product-content-1{
+		width: 810px;
+		margin: 55px auto 0;
+		position: relative;
+
+		.slick-next {
+			border-bottom: 2px solid #a4a4a4;
+	    border-right: 2px solid #a4a4a4;	    
+	    display: block;
+	    width: 12px;
+	    height: 12px;
+	    margin-top: -6px;
+	    pointer-events: none;
+	    position: absolute;
+	    right: -100px;
+	    top: 50%;
+	    -webkit-transform-origin: 66% 66%;
+	    transform-origin: 66% 66%;
+	    -webkit-transform: rotate(-45deg);
+	    transform: rotate(-45deg);
+	    -webkit-transition: all 0.15s ease-in-out;
+	    transition: all 0.15s ease-in-out;	    
+		}
+
+		.slick-prev {
+			border-bottom: 2px solid #a4a4a4;
+	    border-right: 2px solid #a4a4a4;	    
+	    display: block;
+	    width: 12px;
+	    height: 12px;
+	    margin-top: -6px;
+	    pointer-events: none;
+	    position: absolute;
+	    left: -100px;
+	    top: 50%;
+	    -webkit-transform-origin: 66% 66%;
+	    transform-origin: 66% 66%;
+	    -webkit-transform: rotate(135deg);
+	    transform: rotate(135deg);
+	    -webkit-transition: all 0.15s ease-in-out;
+	    transition: all 0.15s ease-in-out;
+		}
+
+	}
+
+	.catalog-item {
+		margin-bottom: 0;
+		width: calc(33.333% - 30px);
+		margin: 0 15px;
+
+	.catalog-button {
+		width: 100%;
+		margin-top: 0;
+		}
+
+	}	
+
+	//end section-1
+
+	//section-2
+
+	.section-2 {
+		background: #fff;
+	}
+
+	//end section-2
 
 }
 

@@ -166,10 +166,20 @@ $blue-color: #3c4f90;
       }   
 
       //end right-column
-
-
   }  
 
   //END CATALOG-PAGE
+
+  //PRODUCT-PAGE 
+
+  .product-page {
+
+    .slider-product-content {
+      width: 100%; 
+    }
+
+  }
+
+  //END PRODUCT-PAGE 
   
 }

@@ -32,6 +32,51 @@ $icon-font-path: '../fonts/';
 
  //END FOOTER
 
+ 
+//PRODUCT-PAGE
+
+ .product-page {
+
+	//tabs
+
+	 .responsive-tabs {
+	 	height: 40px;
+
+	 	 dt {
+	    float: left;
+	    border-top: none;
+	    border: none;
+	   }
+
+	   .active + dd {
+	    display: none;
+	    height: 140px;
+	   }
+
+  	}  
+
+	.responsive-tabs-placeholder {
+	  clear: both;
+	  display: block;
+	  padding: 15px 20px;
+	  border: 1px solid $border-color;
+	  border-top: none;
+	  
+		width: 100%;
+		background: #fff;
+		overflow: auto;
+		height: 150px;
+		overflow: hidden;
+		overflow-y: scroll;	
+
+  }
+  
+  //end-tabs
+
+ }
+
+ //END PRODUCT-PAGE
+
   
 }
 
