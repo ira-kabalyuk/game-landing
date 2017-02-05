@@ -157,7 +157,22 @@ $blue-color: #3c4f90;
 					height: auto;
 					line-height: normal;
 					min-height: auto;
-					padding: 5px 0;					
+					padding: 5px 0;	
+
+					a {
+						font-size: 16px;
+						color: #000;
+						text-decoration: none;
+
+						&:hover,
+						&:focus,
+						&:active {
+							text-decoration: none;
+							background: transparent;
+							color: #000;
+						}
+
+					}				
 
 					&:hover {
 						background: transparent;
@@ -255,6 +270,21 @@ $blue-color: #3c4f90;
 			text-align: center;
 			vertical-align: middle;
 			padding: 10px 0;
+
+			a {
+					font-size: 16px;
+					color: #000;
+					text-decoration: none;
+
+					&:hover,
+					&:focus,
+					&:active {
+						text-decoration: none;
+						background: transparent;
+						color: #000;
+					}
+
+				}				
 
 			&:hover {
 				background: #8474d6;
