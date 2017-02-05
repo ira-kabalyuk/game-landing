@@ -178,6 +178,11 @@ $blue-color: #3c4f90;
       width: 100%; 
     }
 
+    .next-button,
+    .prev-button {
+      display: none;
+    }
+
   }
 
   //END PRODUCT-PAGE 

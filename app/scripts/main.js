@@ -76,16 +76,18 @@ jQuery(document).ready(function() {
 
    $('.slider-product-content').slick({
       infinite: true,
-      arrows: true,      
+      arrows: false,      
       slidesToShow: 3,
       slidesToScroll: 1,
       accessibility: false,
 
         responsive: [
             {
-              breakpoint: 1024,
+              breakpoint: 992,
               settings: { 
                 dots: true,
+                slidesToShow: 2,
+                slidesToScroll: 1,
                 arrows: false,                                   
               }
             },
@@ -94,24 +96,36 @@ jQuery(document).ready(function() {
               breakpoint: 540,
               settings: {                             
                 slidesToShow: 1,
-                slidesToScroll: 1,                             
+                slidesToScroll: 1,  
+                 dots: true,                           
               }
-            },
+            }
         ]    
     });
+
+
+   $('.next-button').click(function(){
+    $('.slider-product-content').slick('slickPrev');
+  });
+
+   $('.prev-button').click(function(){
+    $('.slider-product-content').slick('slickNext');
+  });
 
    $('.slider-product-content-1').slick({
       infinite: true,
-      arrows: true,      
+      arrows: false,      
       slidesToShow: 3,
       slidesToScroll: 1,
       accessibility: false,
 
         responsive: [
             {
-              breakpoint: 1024,
+              breakpoint: 992,
               settings: { 
                 dots: true,
+                slidesToShow: 2,
+                slidesToScroll: 1,
                 arrows: false,                                   
               }
             },
@@ -120,12 +134,20 @@ jQuery(document).ready(function() {
               breakpoint: 540,
               settings: {                             
                 slidesToShow: 1,
-                slidesToScroll: 1,                             
+                slidesToScroll: 1,  
+                 dots: true,                           
               }
-            },
+            }
         ]    
     });
 
+   $('.next-button').click(function(){
+    $('.slider-product-content-1').slick('slickPrev');
+  });
+
+   $('.prev-button').click(function(){
+    $('.slider-product-content-1').slick('slickNext');
+  });
 
    //footer tab
 
