@@ -208,7 +208,7 @@ body {
 		&:focus,
 		&:active {
 			color: $page-color;
-			background: rgba(255,255,255,0.7);
+			background: rgba(255,255,255,0.3);
 			text-decoration: none;
 			transition: background .5s ease;
 		}
