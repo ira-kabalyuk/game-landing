@@ -8,6 +8,23 @@ $blue-color: #3c4f90;
 
 @media only screen and (max-width: 767px) {
 
+	.content-item {
+		width: calc(50% - 30px);		    
+	}
+
+	 .slider-wrap {
+
+    .slider-big-img {
+      display: none;
+    }
+
+    .slider-min-img {
+      display: block;
+    }
+
+  }
+
+
   //HEADER
 
   .header {
@@ -171,24 +188,11 @@ $blue-color: #3c4f90;
 
   //MAIN-PAGE
 
-	.main-page {
-
-		.slider-center-block {
-			
-		}
-
-		.slider-big-img {
-			display: none;
- 		}
-
-		.slider-min-img {
-			display: block;
- 		}
+	.main-page {		
 
  		//section-2
 
- 		.content-item {
-			width: calc(50% - 30px);
+ 		.content-item {			
 			margin: 0 15px 30px;	    
 		}
 

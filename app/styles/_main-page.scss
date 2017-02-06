@@ -6,76 +6,7 @@ $border-color: #d8d8d8;
 $black-color: #111111;
 $blue-color: #3c4f90;
 
-.main-page {
-
-	.slider-wrap {
-		width: 100%;
-		height: 320px;
-		overflow: hidden;
-		position: relative;
-	}
-
-	.slider-center-block {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		z-index: 10;
-		text-align: center;
-	}
-	
-
-	//slider
-
-	.head-slider {
-		height: 100%;
-	}
-
-	.slick-list {
-		height: 100%;
-	}
-
-	.slick-track {
-		height: 100%;
-	}
-
-	.head-slider-item {
-		height: 100%;
-
-		img {
-			width: 100%;
-			height: 100%;
-		}
-
-	}
-
-	.slick-dots {
-		text-align: center;
-		bottom: 15px;		
-
-		li {
-			display: inline-block;
-			width: 13px;
-			height: 13px;
-			background: #b5b5b3;
-			border-radius: 50%;
-			list-style: none;			
-
-			button {
-
-				&:before {
-					content: "";
-				}
-				
-			}
-
-		}
-
-		.slick-active {
-			background: #fff;
-		}
-
-	}
+.main-page {	
 
 	//section-2
 
@@ -89,19 +20,13 @@ $blue-color: #3c4f90;
 
 	}	
 
-	.content-list {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		flex-wrap: wrap;
+	.content-list {		
+		justify-content: space-between;		
 		margin-top: 40px;
 	}
 
 	.content-item {     
-    height: 245px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
+    	height: 245px;		
 
 		a {
 			display: inline-block;
@@ -236,6 +161,15 @@ $blue-color: #3c4f90;
 			li {
 				width: 9px;
 				height: 9px;
+
+				button {
+
+					&:before {
+						content: "";
+					}
+
+				}
+
 			}
 
 			.slick-active {

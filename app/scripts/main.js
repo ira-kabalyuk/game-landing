@@ -104,13 +104,14 @@ jQuery(document).ready(function() {
     });
 
 
-   $('.next-button').click(function(){
+   $('.prev-button').click(function(){
     $('.slider-product-content').slick('slickPrev');
   });
 
-   $('.prev-button').click(function(){
+   $('.next-button').click(function(){
     $('.slider-product-content').slick('slickNext');
   });
+
 
    $('.slider-product-content-1').slick({
       infinite: true,
@@ -141,11 +142,11 @@ jQuery(document).ready(function() {
         ]    
     });
 
-   $('.next-button').click(function(){
+   $('.prev-button-bot').click(function(){
     $('.slider-product-content-1').slick('slickPrev');
   });
 
-   $('.prev-button').click(function(){
+   $('.next-button-bot').click(function(){
     $('.slider-product-content-1').slick('slickNext');
   });
 

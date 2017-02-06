@@ -19,7 +19,8 @@ $blue-color: #3c4f90;
 
 		.img-wrap {
 			width: 100%;
-			min-height: 200px;
+			max-height: 200px;
+			height: 200px;
 			overflow: hidden;
 			border-radius: 2px;
 
@@ -99,7 +100,7 @@ $blue-color: #3c4f90;
 
 		span {
 			position: absolute;
-			width: 13px;
+			width: 22px;
 			background: #fff;
 			height: 22px;
 			right: 100px;

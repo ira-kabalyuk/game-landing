@@ -8,20 +8,24 @@ $blue-color: #3c4f90;
 
 @media only screen and (max-width: 540px) {
 
+	.slider-center-block {
+		width: 100%;
+	}
+
+	.content-item {
+		width: 100%;
+		margin: 0 auto 5px auto;
+  
+	}
+
 	//MAIN-PAGE
 
-	.main-page {
-
-		.slider-center-block {
-			width: 100%;
-		}
+	.main-page {	
 
 		//section-2
 
- 		.content-item {
-			width: 100%;
+ 		.content-item {			
 			margin: 0 auto 5px auto;
-
 			height: 120px;	    
 		}
 

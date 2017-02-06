@@ -416,7 +416,7 @@ $blue-color: #3c4f90;
 		//position: relative;		
 	}
 
-	.next-button {
+	.next-button, .next-button-bot {
 			border-bottom: 2px solid #a4a4a4;
 	    border-right: 2px solid #a4a4a4;	   
 	    width: 12px;
@@ -433,7 +433,7 @@ $blue-color: #3c4f90;
 	    transition: all 0.15s ease-in-out;	    
 		}
 
-		.prev-button {
+		.prev-button, .prev-button-bot {
 			border-bottom: 2px solid #a4a4a4;
 	    border-right: 2px solid #a4a4a4;	    
 	    width: 12px;
