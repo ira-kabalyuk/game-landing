@@ -19,9 +19,12 @@ $blue-color: #3c4f90;
 		
 	}	
 
-	.form-block {
-		border-top: 1px solid $border-color;
+	.form-block {		
 		padding: 30px 0 0 0;
+	}
+
+	form {
+		margin-top: 30px;
 	}
 
 	.input-wrap {

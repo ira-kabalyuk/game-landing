@@ -756,5 +756,60 @@ $blue-color: #3c4f90;
 
   //END CONTACTS-PAGE
 
+  //ORDER-PAGE
+
+  .order-page {
+
+  	.form-bottom-block {
+  		padding: 0 15px;
+  	}
+
+  	  .cart {
+		  	width: 100%;		  	  	
+
+		  	&:after {
+		  		content: "";
+		  		display: none;
+		  	}
+
+		  	.cart-item {
+		  		position: relative;
+
+					&:last-child {
+						border-bottom: none;
+					}
+
+		  	}
+
+		  	.delete-link {
+		  		display: none;
+		  	}
+
+		  	.icon-cart-close {
+		  		position: absolute;
+		  		right: 0;
+		  		top: 50%;
+		  		transform: translateY(-50%);
+		  		display: block;
+		  	}
+
+	  	.cart-button {
+	  		background: #8474d6;
+	  		color: #fff;
+	  		border-radius: 3px;
+				font-weight: 400;
+				letter-spacing: normal;
+				max-width: 290px;
+				display: block;
+				margin: 10px auto 0;
+				padding: 11px 0;
+	  	}
+
+  	} 
+
+	}
+
+  //END-ORDER-PAGE
+
 
 }
