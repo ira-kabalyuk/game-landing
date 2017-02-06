@@ -194,6 +194,26 @@ $blue-color: #3c4f90;
 
   }
 
-  //END PRODUCT-PAGE 
+  //END PRODUCT-PAGE
+
+  //ABOUT-PAGE 
+
+  .about-page {
+
+    .press-list {
+
+      .img-wrap {
+        height: 160px;        
+      }
+
+    }
+    
+    .press-item {
+      width: 28%;
+    }    
+
+  }
+
+  //END ABOUT-PAGE 
   
 }

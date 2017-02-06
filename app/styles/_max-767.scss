@@ -690,5 +690,53 @@ $blue-color: #3c4f90;
 
 //END INSTASHOP-PAGE
 
+//ABOUT-PAGE 
+
+  .about-page {
+
+  	.content {
+  		margin-right: 0;
+  		margin-left: 0;
+  		padding: 3.6rem  15px 0 15px;
+  	}
+
+  	.left-column {
+  		width: calc(50% - 30px);
+  		height: auto;
+  		padding-left: 15px;
+
+  		.img-wrap {
+				width: 100%;
+				height: auto;
+  		}
+
+  	}
+
+  	.right-column {
+  		width: calc(50% - 30px);
+  		height: auto;
+  		padding-right: 15px;
+  	}
+
+    .press-list {
+
+      .img-wrap {
+        height: 160px;        
+      }
+
+    }
+    
+    .press-item {
+      width: calc(33.3333% - 35px);
+    }
+
+    .description-text {
+			width: 100%;			
+    }    
+
+  }
+
+  //END ABOUT-PAGE 
+
 
 }

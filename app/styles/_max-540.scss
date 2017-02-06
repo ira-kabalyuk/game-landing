@@ -345,6 +345,109 @@ $blue-color: #3c4f90;
 
 //END-NEWS-PAGE
 
- 
-}
+// ABOUT-PAGE
+
+	.about-page {
+		
+		.left-column {
+			width: calc(100% - 30px);
+			height: auto;
+			float: none;
+			margin: 0 auto;
+			padding-left: 0;
+
+			.img-wrap {
+				width: 120px;
+				height: 120px;
+				margin: 0 auto;
+			}
+
+		}
+
+		.right-column {
+			width: calc(100% - 30px);
+			width: 100%;
+			float: none;
+			margin: 20px auto 0;
+			text-align: center;
+			padding-right: 0;
+			padding: 0 15px;
+		}
+
+		.description-block {
+
+			.description-text {
+			text-align: center;
+			}
+
+		}
+
+		.about-list {
+
+			.img-wrap {
+				width: 70px;
+				height: 70px;
+				border-radius: 50%;				
+
+				img {
+					height: 100%;
+				}
+
+			}
+
+		}
+
+		.about-item {
+			width: 100%;
+			margin: 0 auto 0 0;
+			border-bottom: 1px solid $border-color;
+			padding: 15px 0;
+
+			&:nth-child(2n+1) {
+				
+				.img-wrap {
+					float: left;
+					margin-right: 15px;
+				}
+
+				.name,
+				.position {
+					text-align: left;
+				}
+
+			}
+
+			&:nth-child(2n) {
+				
+				.img-wrap {
+					float: right;
+					margin-left: 15px;
+				}
+
+				.name,
+				.position {
+					text-align: right;
+				}
+
+			}
+
+		}
+
+		.press-list {
+
+			.img-wrap {
+				height: auto;
+			}
+
+		}
+
+		.press-item {
+			width: calc(100% - 30px);
+		}
+
+	}
+
+//END ABOUT-PAGE
+
+ }
 

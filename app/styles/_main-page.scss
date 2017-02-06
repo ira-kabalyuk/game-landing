@@ -26,7 +26,10 @@ $blue-color: #3c4f90;
 	}
 
 	.content-item {     
-    	height: 245px;		
+    	height: 245px;
+    	display: flex;
+    	align-items: center;
+    	justify-content: center;		
 
 		a {
 			display: inline-block;
