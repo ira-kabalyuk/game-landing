@@ -738,5 +738,23 @@ $blue-color: #3c4f90;
 
   //END ABOUT-PAGE 
 
+  //CONTACTS-PAGE
+
+  .contacts-page {
+		padding: 0 15px;
+
+		.contacts-form {
+			width: 100%;
+		}
+
+		.left-column {
+			margin-right: 15px;
+			width: calc(50% - 15px);
+		}		
+
+  }
+
+  //END CONTACTS-PAGE
+
 
 }

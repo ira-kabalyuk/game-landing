@@ -449,5 +449,76 @@ $blue-color: #3c4f90;
 
 //END ABOUT-PAGE
 
+//CONTACTS-PAGE
+
+  .contacts-page {
+  	padding: 0;
+
+	  .contacts-wrap {
+	  	padding: 2.6rem 0 0 0;
+	  	display: flex;
+	  	flex-direction: column;
+	  }	
+
+		.left-column {
+			margin-right: 0;
+			padding: 0 15px 2.6rem 15px;
+			width: 100%;
+			order: 2;	
+			margin-top: 20px;
+			webkit-box-shadow: inset 0px 50px 50px -14px rgba(241,241,241,1);
+			-moz-box-shadow: inset 0px 50px 50px -14px rgba(241,241,241,1);
+			box-shadow: inset 0px 50px 50px -14px rgba(241,241,241,1);
+			background: linear-gradient(to top, #f9f2f2, #fff8f8);		
+		}
+
+		.contacts-input {
+			background: transparent;
+		}
+
+		.right-column {
+			width: 100%;
+			padding: 0 15px;
+			order: 0;
+
+			.block-title {
+				display: none;
+			}			
+
+		}
+
+		.block-title {
+			padding-top: 20px;
+			text-align: center;
+		}
+
+		.contacts-block {			
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.contacts-text {
+			order: 0;
+			text-align: center;
+		} 
+
+		.map-block {
+			order: -1;
+			margin-bottom: 0;
+		}
+
+		.contact-text {
+			text-align: center;
+		}
+
+		.contact-net-list {
+			text-align: center;
+		}
+
+  }
+
+  //END CONTACTS-PAGE
+
  }
 
