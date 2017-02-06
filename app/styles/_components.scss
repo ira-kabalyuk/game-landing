@@ -281,7 +281,8 @@ body {
 			width: 100%;
 			overflow: hidden;
 			border-radius: 5px;
-			min-height: 200px;
+			max-height: 200px;
+			height: 200px;
 
 			img {
 				width: 100%;
@@ -343,6 +344,10 @@ body {
 		width: 100%;
 		border-radius: 3px;
 		margin-top: 15px;
+	}
+
+	.icon-button {
+		margin-right: 16px;
 	}
 
 }
