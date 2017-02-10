@@ -68,7 +68,7 @@ jQuery(document).ready(function() {
         slidesToShow: 3,
         slidesToScroll: 1,
         asNavFor: '.product-slider-for',
-        dots: true,
+        dots: false,
         centerMode: true,
         focusOnSelect: true
       });

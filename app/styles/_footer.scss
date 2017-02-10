@@ -45,26 +45,27 @@ $blue-color: #3c4f90;
 	}
 
 	.footer-button {
-		display: inline-block;
-		color: #fff;
-		font-size: 14px;
-		font-weight: 600;
-		background: #433c3c;
-		padding: 8px 0;				
-		width: 133px;
-		text-align: center;
-		border-radius: 3px;
+				display: inline-block;
+				color: #fff;
+				font-size: 14px;
+				font-weight: 600;
+				background: #433c3c;
+				padding: 8px 0;				
+				width: 133px;
+				text-align: center;
+				border-radius: 3px;
 
-		&:hover,
-		&:focus,
-		&:active {
-			color: #fff;
-			background: rgba(67, 60, 60, 0.8);
-			text-decoration: none;
+			&:hover,
+			&:focus,
+			&:active {
+				color: #fff;
+				background: rgba(67, 60, 60, 0.8);
+				text-decoration: none !important;
 		}
 
 	}	
 
+	
 	.footer-net-list {
 		text-align: justify;
 		padding-top: 10px;
