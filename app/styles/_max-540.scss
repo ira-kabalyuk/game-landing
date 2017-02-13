@@ -18,6 +18,38 @@ $blue-color: #3c4f90;
   
 	}
 
+	.cart {
+		height: auto;
+
+		.cart-body {
+  		height: calc(242px - 60px);
+  		}
+
+  		.cart-footer {
+			position: static;
+			height: auto;
+  		}
+
+	}
+
+	//HEADER
+
+	.header {
+
+		.nav-bar {
+
+			ul {
+				&.showing {
+					height: 260px;
+				}
+			}
+		}
+	}
+
+	//END HEADER
+
+	
+
 	//MAIN-PAGE
 
 	.main-page {	

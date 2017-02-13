@@ -8,6 +8,15 @@ $blue-color: #3c4f90;
 
 @media only screen and (max-width: 767px) {
 
+	body {
+		overflow-x: hidden;
+	}
+
+	.menu-open {
+		overflow: hidden;
+    	height: 100%;
+	}
+
 	.device-iphone {
 		padding-bottom: 44px;
 		//padding-right: 17px !important;
@@ -80,22 +89,24 @@ $blue-color: #3c4f90;
 			display: block;
 
 			ul {				
-				display: none;
+				height: 0;
+				transition: height .4s;	
+				background: #fff;
+				display: block;
+				font-size: 18px;
+				position: absolute;								
+				left: 0;			
+				width: 100%;
+				transition: height .4s;
+				
+				padding: 0 15px;					
+				overflow-y: auto;
+				 -webkit-overflow-scrolling: touch;
+				z-index: 1000;
 
-				&.showing {
-					background: #fff;
-					display: block;
-					height: auto;							
-					font-size: 18px;
-					position: absolute;			
-					left: 0;			
-					width: 100%;
 
-					transition: height 0.4s;
-					padding: 0 15px;
-					overflow-y: scroll;
-					 -webkit-overflow-scrolling: touch;
-					z-index: 1000;
+				&.showing {					
+					height: calc(100vh - 60px);			
 
 				}
 
@@ -130,6 +141,7 @@ $blue-color: #3c4f90;
 
   .cart {
   	width: 100%;
+  	height: calc(100vh - 60px);
   	border-radius: 0;
   	border-bottom: 1px solid #ffe3e3;
   	top: 49px;
@@ -153,7 +165,19 @@ $blue-color: #3c4f90;
 
   	}
 
+  	.cart-head {
+  		display: none;
+  	}
+
   	.cart-body {
+  		//height: calc(100vh - 80px - 60px);
+  		height: calc(100% - 60px);
+
+  		.cart-head {
+			display:block;
+			text-align: center;
+			font-size: 14px;
+		}
 
   	}
 
@@ -173,16 +197,24 @@ $blue-color: #3c4f90;
   		background: #8474d6;
   		color: #fff;
   		border-radius: 3px;
-			font-weight: 400;
-			letter-spacing: normal;
-			max-width: 290px;
-			display: block;
-			margin: 10px auto 0;
-			padding: 11px 0;
+		font-weight: 400;
+		letter-spacing: normal;
+		max-width: 290px;
+		display: block;
+		margin: 10px auto 0;
+		padding: 11px 0;
   	}
 
   	.scrollbar {
   		float: none;
+  	}
+
+  	.cart-footer {
+  		position: absolute;
+  		height: 60px;
+  		left: 0;
+		bottom: 0;
+		width: 100%;
   	}
 
   } 

@@ -6,9 +6,7 @@ $border-color: #d8d8d8;
 $black-color: #111111;
 $blue-color: #3c4f90;
 
-.cart.is-emersione {
-	display: block;
-}
+
 
 .cart {
 	background: #fff;
@@ -20,11 +18,18 @@ $blue-color: #3c4f90;
 	border-radius: 5px;
 	font-size: 14px;
 	z-index: 20;
-	display: none;
+	display: none;	
 	-webkit-box-shadow: 0px 3px 31px 0px rgba(204,204,204,1);
 	-moz-box-shadow: 0px 3px 31px 0px rgba(204,204,204,1);
 	box-shadow: 0px 3px 31px 0px rgba(204,204,204,1);
-	padding: 15px 11px;
+	padding: 15px 0;
+	transition: height .4s;
+
+	&.is-emersione {
+			display: block;
+			
+		}
+	
 
 	&:after {
 		content: "";
@@ -46,7 +51,17 @@ $blue-color: #3c4f90;
 
 	.cart-body {
 		//height: 240px; /* 3 товара*/
-		height: 209px;		
+		height: calc(208px - 60px);
+		overflow: auto;
+		-webkit-overflow-scrolling: touch;
+		padding: 0 15px;
+			
+		.cart-head {
+			display: none;
+			text-align: center;
+			font-size: 14px;
+		}
+
 	}
 
 	.cart-list {
@@ -104,6 +119,8 @@ $blue-color: #3c4f90;
 
 	.is-close {
 		display: none;
+		opacity: 0;
+		transition: opasity .4s;
 	}
 
 	.cart-footer {
