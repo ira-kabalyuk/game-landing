@@ -8,6 +8,12 @@ $blue-color: #3c4f90;
 
 @media only screen and (min-width: 768px) {  
 
+  .main {
+   min-height: 100%;
+   padding-top: 132px;
+   padding-bottom: 270px;
+  }
+
 	.hidden-sm {
 		display: none;
 	}
@@ -31,6 +37,7 @@ $blue-color: #3c4f90;
   //HEADER
 
   .header {
+    margin-bottom: -132px;
 
   	.header-left-column {
   		margin-left: -15px;
@@ -101,6 +108,7 @@ $blue-color: #3c4f90;
 
   .footer {
     padding: 45px 0;
+    margin-top: -270px;
 
     #tab1 {
       width: 20%;

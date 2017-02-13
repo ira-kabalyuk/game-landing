@@ -399,6 +399,10 @@ jQuery(document).ready(function() {
 
    //end product tab   
 
+   if(navigator.userAgent.match(/iPhone/i)) {
+  $('body').addClass('device-iphone');
+}
+
 });
 
 

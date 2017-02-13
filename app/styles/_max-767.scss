@@ -8,21 +8,14 @@ $blue-color: #3c4f90;
 
 @media only screen and (max-width: 767px) {
 
-	.content-item {
-		width: calc(50% - 30px);		    
+	.device-iphone {
+		padding-bottom: 44px;
+		//padding-right: 17px !important;
 	}
 
-	 .slider-wrap {
-
-    .slider-big-img {
-      display: none;
-    }
-
-    .slider-min-img {
-      display: block;
-    }
-
-  }
+	.content-item {
+		width: calc(50% - 30px);		    
+	}	
 
 
   //HEADER
@@ -78,23 +71,7 @@ $blue-color: #3c4f90;
 		
 		/* mobile nav  */
 
-		.showing {
-			background: #fff;
-			display: block;
-			//height: 100%;							
-			font-size: 18px;
-			position: absolute;			
-			left: 0;			
-			width: 100%;
-
-			transition: height 0.4s;
-			padding: 0 15px;
-			overflow-y: scroll;
-			 -webkit-overflow-scrolling: touch;
-			z-index: 1000;
-
-
-		}
+		
 
 		/* end */
 
@@ -102,9 +79,25 @@ $blue-color: #3c4f90;
 			width:100%;
 			display: block;
 
-			ul {
-				height: 320px;
+			ul {				
 				display: none;
+
+				&.showing {
+					background: #fff;
+					display: block;
+					height: auto;							
+					font-size: 18px;
+					position: absolute;			
+					left: 0;			
+					width: 100%;
+
+					transition: height 0.4s;
+					padding: 0 15px;
+					overflow-y: scroll;
+					 -webkit-overflow-scrolling: touch;
+					z-index: 1000;
+
+				}
 
 				li {
 					box-sizing: border-box;
@@ -112,7 +105,7 @@ $blue-color: #3c4f90;
 					text-align: left;
 					height: auto;					
 					//padding: 10px 0 10px 0;
-					padding: 3px 0 3px 0;
+					padding: 4px 0 4px 0;
 
 					&:first-child {
 						padding-top: 25px;
@@ -125,11 +118,7 @@ $blue-color: #3c4f90;
 
 				}
 
-			}	
-
-			ul.showing {
-				display: block;
-			}
+			}				
 
 		}		
 
@@ -776,6 +765,10 @@ $blue-color: #3c4f90;
   //ORDER-PAGE
 
   .order-page {
+
+  	.right-column {
+  		margin-top: 30px;
+  	}
 
   	.form-bottom-block {
   		padding: 0 15px;

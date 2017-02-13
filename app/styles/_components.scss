@@ -6,14 +6,22 @@ $border-color: #d8d8d8;
 $black-color: #111111;
 $blue-color: #3c4f90;
 
+html {
+	height: 100%;
+}
+
 body {
 	font-family: 'ApercuPro';
 	font-weight: 400;
 	background: #fff;
-	padding-right: 0 !important;
+	//padding-right: 0 !important;
 	overflow-x: hidden; 
 	min-width: 320px;
-		
+	height: 100%;	
+}
+
+.main {
+	min-height: 100%;
 }
 
 .icon {

@@ -70,6 +70,9 @@ $blue-color: #3c4f90;
   .about-page {
 
     .press-list {
+    	margin-left: -15px;
+    	margin-right: -15px;
+    	
 
       .img-wrap {
         height: 200px;        
@@ -78,7 +81,15 @@ $blue-color: #3c4f90;
     }
     
     .press-item {
-      width: 260px;
+      width: calc(33.333% - 30px);
+      margin: 0;
+      margin-bottom: 30px;
+      padding: 0 15px;
+    }
+
+    .press-item-wrap {
+		width: 260px;
+		margin: 0 auto;
     }    
 
   }

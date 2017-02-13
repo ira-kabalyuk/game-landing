@@ -129,7 +129,7 @@ $blue-color: #3c4f90;
 
 	.press-list {
 		margin-top: 60px;
-		text-align: justify;	
+		text-align: center;	
 
 		&:after {
 			content:"";
@@ -152,9 +152,13 @@ $blue-color: #3c4f90;
 	}
 
 	.press-item {
-		width: 260px;
+		
 		display: inline-block;
 		margin-bottom: 0;			
+	}
+
+	.press-item-wrap {
+		
 	}
 
 	.press-text-block {

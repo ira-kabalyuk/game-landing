@@ -38,7 +38,8 @@ $blue-color: #3c4f90;
 
 		&:hover {	
 
-			.bg-block {
+			&:after {
+				content: "";
 				background: rgba(0,0,0,0.5);
 				position: absolute;
 				width: 100%;
