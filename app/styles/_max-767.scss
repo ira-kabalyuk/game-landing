@@ -788,7 +788,8 @@ $blue-color: #3c4f90;
   //CONTACTS-PAGE
 
   .contacts-page {
-		padding: 0 15px;
+	  padding-left: 15px;
+	  padding-right: 15px;		
 
 		.contacts-form {
 			width: 100%;
@@ -861,6 +862,18 @@ $blue-color: #3c4f90;
 	}
 
   //END-ORDER-PAGE
+
+  //NEWS-PAGE
+
+  .news-page {
+
+  	.content-item {
+		margin: 0 15px 30px;
+  	}
+
+  }
+
+  //END NEWS-PAGE
 
   //ONE-NEWS-PAGE
 

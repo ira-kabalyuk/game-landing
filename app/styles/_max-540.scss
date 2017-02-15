@@ -22,7 +22,7 @@ $blue-color: #3c4f90;
 		height: auto;
 
 		.cart-body {
-  		height: calc(242px - 60px);
+  		height: calc(300px - 60px);
   		}
 
   		.cart-footer {
@@ -40,7 +40,8 @@ $blue-color: #3c4f90;
 
 			ul {
 				&.showing {
-					height: 260px;
+					//height: 260px;
+					height: 320px;
 				}
 			}
 		}
@@ -497,7 +498,8 @@ $blue-color: #3c4f90;
 //CONTACTS-PAGE
 
   .contacts-page {
-  	padding: 0;
+  	padding-left: 0;
+	padding-right: 0;  	
 
 	  .contacts-wrap {
 	  	padding: 2.6rem 0 0 0;
