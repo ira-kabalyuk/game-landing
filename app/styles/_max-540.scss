@@ -364,7 +364,15 @@ $blue-color: #3c4f90;
 
 	.filter-title {
 			text-align: left;
-		}	
+		}
+
+		.responsive-tabs {		
+
+			.scrollbar {
+				margin-right: 10px;
+				margin-bottom: 10px;
+			}
+		}
 
 	}
 

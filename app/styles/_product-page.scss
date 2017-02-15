@@ -324,10 +324,20 @@ $blue-color: #3c4f90;
 
     .active + dd {
 	    display: block;	   
-	    padding: 15px 10px;
+	    padding: 15px 0;
+	    overflow: hidden;
+	    height: 150px;
    	}
 
   }  
+
+  .force-overflow {
+
+  	p {
+  		padding: 0 15px 0 15px;
+  	}
+
+  }
 
 	.responsive-tabs-placeholder {
   	display: none;
@@ -336,7 +346,7 @@ $blue-color: #3c4f90;
 			font-size: 14px;
 			font-weight: 400;
 			line-height: 1.5em;
-			color: $black-color;		
+			color: $black-color;				
 		}
 
   }

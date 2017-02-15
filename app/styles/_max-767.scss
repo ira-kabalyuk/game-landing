@@ -18,13 +18,22 @@ $blue-color: #3c4f90;
 	}
 
 	.device-iphone {
-		padding-bottom: 44px;
+		//padding-bottom: 44px;
 		//padding-right: 17px !important;
 	}
 
 	.content-item {
 		width: calc(50% - 30px);		    
 	}	
+
+	.main {
+		padding-top: 60px;
+		padding-bottom: 270px;
+	}
+
+	.footer {
+		margin-top: -270px;
+	}
 
 
   //HEADER
