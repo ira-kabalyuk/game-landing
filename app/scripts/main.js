@@ -231,8 +231,8 @@ jQuery(document).ready(function() {
 
   $(".cart-block").click(function( e ) {
         e.stopPropagation();
-        $(".cart").toggleClass("is-emersione");
-        /*$(".cart").slideToggle(100);*/
+        /*$(".cart").toggleClass("is-emersione");*/
+        $(".cart").slideToggle(400);
         $('body').toggleClass('menu-open');
     }); 
 
