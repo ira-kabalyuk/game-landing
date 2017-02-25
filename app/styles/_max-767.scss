@@ -62,7 +62,13 @@ $blue-color: #3c4f90;
 		left: 15px;
 
 		.icon-mobile-menu {
-			display: inline-block;
+			background-image: url(../images/icon-mobile-menu.svg);    
+	    width: 24px;
+	    height: 18px;			
+			background-size: cover;
+	    background-repeat: no-repeat;
+	    background-position: 100% 100%;
+	    display: inline-block;
 		}
 
 		.icon-menu-close {
@@ -78,7 +84,14 @@ $blue-color: #3c4f90;
 		}
 
 		.icon-menu-close {
+			background-image: url(../images/icon-menu-close.svg);    
+	    width: 20px;
+    	height: 20px;	
+			background-size: cover;
+	    background-repeat: no-repeat;
+	    background-position: 100% 100%;
 			display: inline-block;
+			
 		}
 
 	}	
