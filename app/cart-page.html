@@ -130,14 +130,14 @@
     </div>
   </header>
   
-  <main class="main order-page">
+  <main class="main cart-page">
     <div class="title-img-block">
       <div class="img-wrap">
         <img src="images/img-2.jpg" alt="">
       </div>
       <div class="slider-center-block">
-        <h1 class="title">Доставка</h1>
-        <p class="title-description">Заполните все поля для оформления заказа</p>
+        <h1 class="title">Корзина</h1>
+        <p class="title-description">У Вас в корзине 3 товара</p>
       </div>      
     </div>
     <div class="container">
@@ -145,92 +145,37 @@
         <div class="content">        
           <div class="form-block clearfix">
           <form action="" class="clearfix">
-             <div class="column left-column col-xs-12 col-sm-6 col-md-5">
-               <p class="form-title">Контактные данные</p>               
-                <div class="input-wrap">
-                   <label for="check1">Имя</label><span>*</span>
-                   <input type="text" id="check1" placeholder="Введите имя">
-                </div>
-                <div class="input-wrap">
-                   <label for="check2">Фамилия</label>
-                   <input type="text" id="check2" placeholder="Введите фамилию">
-                </div>   
-                <div class="input-wrap">
-                   <label for="check3">Номер телефона</label>
-                   <input type="text" id="check3" placeholder="Введите телефон">
-                </div>
-                <div class="input-wrap">
-                   <label for="check4">Электронный адрес</label>
-                   <input type="text" id="check4" placeholder="Введите e-mail">
-                </div>                
-             </div>
-             <div class="column right-column col-xs-12 col-sm-6 col-md-5">
-               <p class="form-title">Адрес доставки</p>               
-                <div class="input-wrap">
-                   <label for="check5">Ваш город</label>
-                   <input type="text" id="check5" placeholder="Введите город">
-                </div>
-                <div class="input-wrap">
-                   <label for="check6">Улица</label>
-                   <input type="text" id="check6" placeholder="Введите улицу">
-                </div> 
-                <div class="input-block clearfix">
-                  <div class="input-wrap">
-                     <label for="check7">Дом</label>
-                     <input type="text" id="check7" placeholder="000">                     
-                  </div>
-                  <div class="input-wrap">
-                     <label for="check8">Квартира</label>
-                     <input type="text" id="check8" placeholder="000">
-                  </div> 
-                  <div class="input-wrap">
-                     <label for="check8">Почтовый индекс</label>
-                     <input type="text" id="check8" placeholder="000">
-                  </div> 
-                </div>
-                <div class="input-wrap">
-                   <label for="check9">Введите строение/корпус <span>(не обязательно)</span></label>
-                   <input type="text" id="check9" placeholder="Строение/корпус">
-                </div>    
-             </div>
-             <div class="clearfix"></div>
-              <div class="form-bottom-block">
-                <div class="bottom-wrap">
-                  <p class="form-title">Способ оплаты</p>
-                  <div class="input-wrap input-radio-wrap">
-                    <input type="radio" id="check10">
-                    <label for="check10">Оплата наличными <span>(только Москва и Санкт-Петербург)</span></label>  
-                  </div>
-                  <div class="input-wrap input-radio-wrap">
-                    <input type="radio" id="check11">
-                    <label for="check11">Оплата Картой</label>  
-                  </div>
-                  <div class="input-wrap input-radio-wrap">
-                   <p class="price-info">Доставка по Москве: <span>350 р.</span></p>
-                    <p class="price-info">Доставка в дрyгие города: <span>300 р.</span></p>
-                  </div>
-                </div>
+             
+              <div class="form-bottom-block">                
                   <!--cart-->
-                  <div class="cart">
-                    <p class="cart-head">У вас в корзине 2 товара<br> на сумму 12 000р.</p>
+                  <div class="cart">                   
                     <div class="cart-body">
                       <ul class="cart-list">
                         <li class="cart-item clearfix">
                           <i class="icon icon-cart-close"></i>
-                          <div class="cart-img-wrap">
+                          <div class="img-wrap cart-img-wrap">
                             <img src="images/cart-photo.jpg" alt="">                 
                           </div>
                             <div class="cart-text-wrap">
                               <p class="cart-name">Постельное белье "Two"</p>
                               <div class="cart-price-block clearfix">
                                 <p class="cart-price"> 7 500 р.</p>
+                                 <ul class="counter-list">                
+                                  <li class="counter-item">                                    
+                                    <div class="counter-wrap clearfix">
+                                      <a class="left-btn">-</a>
+                                      <p class="counter">1</p>
+                                      <a class="right-btn">+</a>
+                                    </div>  
+                                  </li>                                  
+                                </ul>
                                 <p class="delete-link">Удалить</p>
                               </div>
                             </div>
                         </li>
                         <li class="cart-item clearfix">
                           <i class="icon icon-cart-close"></i>
-                          <div class="cart-img-wrap">
+                          <div class="img-wrap cart-img-wrap">
                             <img src="images/cart-photo.jpg" alt="">                 
                           </div>
                             <div class="cart-text-wrap">
@@ -243,7 +188,7 @@
                         </li>
                         <li class="cart-item clearfix">
                           <i class="icon icon-cart-close"></i>
-                          <div class="cart-img-wrap">
+                          <div class="img-wrap cart-img-wrap">
                             <img src="images/cart-photo.jpg" alt="">                 
                           </div>
                             <div class="cart-text-wrap">

@@ -206,61 +206,12 @@ $blue-color: #3c4f90;
 
 	.counter-list {
 		margin-top: 20px;
+
+		.counter-item {			
+			margin-right: 30px;
+		}	
 	}
-
-	.counter-item {
-		display: inline-block;
-		margin-right: 30px;
-
-		&:last-child {
-			margin-right: 0;
-		}
-
-	}
-
-	.counter-wrap {
-		width: 130px;
-		border: 1px solid $border-color;
-		height: 42px;
-		text-align: center;
-		vertical-align: middle;
-		font-size: 13px;
-		margin-top: 10px;
-
-		a {
-			display: inline-block;
-			cursor: pointer;
-			width: 40px;
-			height: 100%;
-			color: #426995;
-			padding: 11px 0;
-			font-weight: 700;
-
-			&:hover {
-				text-decoration: none;
-				color: #426995;
-			}
-
-		}
-
-	}
-
-	.left-btn {
-		border-right: 1px solid $border-color;
-		float: left;
-	}
-	.right-btn {
-		border-left: 1px solid $border-color;
-		float: right;
-	}
-
-	.counter {
-		display: inline-block;
-		height: 100%;
-		color: #426995;
-		padding: 11px 0;
-		font-weight: 700;
-	}
+	
 
 	.price-value {
 		font-size: 20px;

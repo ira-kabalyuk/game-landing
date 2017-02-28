@@ -363,17 +363,19 @@ jQuery(document).ready(function() {
 
   //product-filter
 
-    $('.right-btn').click(function() {       
-      var count = parseInt($('.counter').text()) +1;      
-      $('.counter').text(count);      
+    $('.right-btn').click(function() {
+   var countElem = $(this).parent().find('.counter');
+      var count = parseInt(countElem.text()) + 1;      
+      countElem.text(count);      
     });
   
-    $('.left-btn').click(function() {      
-      var count = parseInt($('.counter').text()) -1;
-      if(count < 0) {
+    $('.left-btn').click(function() {
+   var countElem = $(this).parent().find('.counter');
+      var count = parseInt(countElem.text()) - 1;
+      if(count < 1) {
         return;
         }
-      $('.counter').text(count);        
+      countElem.text(count);        
     });
 
   //product tab    
