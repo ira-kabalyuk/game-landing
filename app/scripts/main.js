@@ -248,17 +248,21 @@ jQuery(document).ready(function() {
  //cart button
 
   $(".delete-link").click(function( e ) {       
-       $(this).parents( ".cart-item" ).fadeOut( "slow", function() {
-    // Анимация завершена.
+       $(this).parents( ".cart-item" ).fadeOut( "slow", function() {   
       });
     });
 
   $(".icon-cart-close").click(function( e ) {       
-       $(this).parents( ".cart-item" ).fadeOut( "slow", function() {
-    // Анимация завершена.
+       $(this).parents( ".cart-item" ).fadeOut( "slow", function() {    
       });
     });
  
+ //очистка корзины
+
+  $(".cart-delete-link").click(function( e ) {       
+       $(".cart-item" ).fadeOut( "slow", function() {   
+      });
+    });
 
   //catalog-menu
 

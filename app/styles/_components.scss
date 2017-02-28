@@ -551,7 +551,7 @@ body {
 			text-align: center;
 			vertical-align: middle;
 			font-size: 13px;
-			margin-top: 10px;
+			
 
 			a {
 				display: inline-block;
@@ -589,6 +589,12 @@ body {
 			font-weight: 700;
 		}
 
+	}
+
+	.price-value {
+		font-size: 20px;
+		font-weight: 400;
+		color: $page-color;	
 	}
 
 
