@@ -173,6 +173,15 @@ $blue-color: #3c4f90;
 				display: inline-block;
 				height: 100%;
 				vertical-align: middle;
+
+				&.active {
+					
+					a {
+						text-decoration: none;
+						color: #2e4288;
+					}
+						
+				}
 				
 
 				a {					
@@ -190,6 +199,8 @@ $blue-color: #3c4f90;
 						text-decoration: none;
 						color: #2e4288;
 					}
+
+					
 				}
 
 			}
