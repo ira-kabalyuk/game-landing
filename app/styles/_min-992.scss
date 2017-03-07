@@ -16,31 +16,14 @@ $blue-color: #3c4f90;
 		width: calc(33.333333% - 30px);		    
 }	
 
+	 
+
+
 	//MAIN-PAGE 
 
   .main-page {
 
-  	 
-		//section-4
-
-		.section-4 {
-
-			.content {
-    			padding: 3.6rem 0 6.6rem;
-    		}
-
-		}
-
-	  .feedback-item {    
-	    text-align: left;
-
-	    &:nth-child(2n) {
-	      text-align: right;
-	    }
-
-	  }  
-
-  //end section-4		
+  
   }
 
 	//END MAIN-PAGE	 

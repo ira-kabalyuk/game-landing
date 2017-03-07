@@ -35,7 +35,7 @@ jQuery(document).ready(function() {
 
         responsive: [
             {
-              breakpoint: 769,
+              breakpoint: 993,
               settings: {
                 arrows: false,
                 slidesToShow: 1,

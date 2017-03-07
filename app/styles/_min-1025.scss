@@ -41,6 +41,40 @@ $blue-color: #3c4f90;
 
   //END HEADER
 
+  	//feedback-block
+
+	.feedback-block {
+
+		.content {
+				padding: 3.6rem 0 6.6rem;
+			}
+
+				.feedback-item {    
+				text-align: left;
+
+			&:nth-child(2n) {
+				text-align: right;
+			}
+
+		}  
+
+	}	 
+
+  //feedback-block	
+
+  //ABOUT
+
+  .about-page {
+
+   .content {
+      //margin-right: -15px;
+      //margin-left: -15px;
+    }
+
+  }
+
+  //END ABOUT
+
   //CATALOG-PAGE
 
   .catalog-page {

@@ -248,6 +248,23 @@ $blue-color: #3c4f90;
 
   //END HEADER
 
+	 //feedback-block
+
+	 .feedback-block {
+
+			.feedback-item {    
+			text-align: center;
+
+				&:nth-child(2n) {
+					text-align: center;
+				}
+
+			}
+
+	 } 
+
+  //end feedback-block
+
   //MAIN-PAGE
 
 	.main-page {		
@@ -379,20 +396,7 @@ $blue-color: #3c4f90;
 		position: static;		
 	}
 
-	//end section-3
-
-	 //section-4
-
-  .feedback-item {    
-    text-align: center;
-
-    &:nth-child(2n) {
-      text-align: center;
-    }
-
-  }  
-
-  //end section-4
+	//end section-3	
 
 	}
 
@@ -756,7 +760,7 @@ $blue-color: #3c4f90;
   	.content {
   		margin-right: 0;
   		margin-left: 0;
-  		padding: 3.6rem  15px 0 15px;
+  		padding: 3.6rem  15px 3.6rem 15px;
   	}
 
   	.left-column {

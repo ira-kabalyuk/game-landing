@@ -75,6 +75,23 @@ $blue-color: #3c4f90;
 
   //END HEADER
 
+  //feedback-block
+
+    .feedback-block {
+
+      .feedback-item {    
+        text-align: center;
+
+        &:nth-child(2n) {
+          text-align: center;
+        }
+
+      }  
+
+    }  
+
+  //end feedback-block
+
   //MAIN-PAGE
 
   .main-page {   
@@ -85,20 +102,7 @@ $blue-color: #3c4f90;
       margin: 0 15px 30px;   
     }
 
-    //end section-2
-
-    //section-4
-
-  .feedback-item {    
-    text-align: center;
-
-    &:nth-child(2n) {
-      text-align: center;
-    }
-
-  }  
-
-  //end section-4
+    //end section-2    
 
   } 
 
