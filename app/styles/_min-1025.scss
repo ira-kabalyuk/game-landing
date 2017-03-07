@@ -6,7 +6,11 @@ $border-color: #d8d8d8;
 $black-color: #111111;
 $blue-color: #3c4f90;
 
-@media only screen and (min-width: 1025px) {	
+@media only screen and (min-width: 1025px) {
+
+  .modal-open .header {
+    padding-right: 17px;
+}	
 	
 
    //HEADER
