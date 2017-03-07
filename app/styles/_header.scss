@@ -193,9 +193,7 @@ $blue-color: #3c4f90;
 					line-height: 3.5em;
 					vertical-align: middle;
 
-					&:hover,
-					&:focus,
-					&:active {
+					&:hover	{
 						text-decoration: none;
 						color: #2e4288;
 					}
