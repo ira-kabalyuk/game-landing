@@ -360,6 +360,10 @@ $blue-color: #3c4f90;
 
 	}
 
+	.button-item {
+		width: calc(50% - 10px);		
+	}
+
 	.catalog-button {
 			display: block;
 			margin: 24px auto 0;

@@ -116,93 +116,33 @@ $blue-color: #3c4f90;
 		padding: 5px 0;
 	}
 
+	.button-list {
+				
+	}
+
+	.button-item {
+		width: 150px;
+		margin: 10px 5px 0 0;
+		float: left;
+		margin-right: 5px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	.cathegory-button {
+		width: 100%;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
 	.filter-title {
 		text-align: center;
 		margin-bottom: 10px;
 		color: #5f698d;
 	}
 
-	.product-filter-item {
-		width: 125px;
-		display: inline-block;
-		text-align: center;
-		margin-right: 30px;
-
-		&:last-child {
-			margin-right: 0;
-		}
-
-		.nice-select {
-			border-radius: 0;
-			border: 1px solid $border-color;
-			width: 100%;
-
-			&:after {
-				border-bottom: 1px solid #959595;
-		    border-right: 1px solid #959595;
-		    content: '';
-		    display: block;
-		    height: 6px;
-		    margin-top: -4px;
-		    pointer-events: none;
-		    position: absolute;
-		    right: 12px;
-		    top: 50%;
-		    -webkit-transform-origin: 66% 66%;
-		    transform-origin: 66% 66%;
-		    -webkit-transform: rotate(45deg);
-		    transform: rotate(45deg);
-		    -webkit-transition: all 0.15s ease-in-out;
-		    transition: all 0.15s ease-in-out;
-		    width: 6px;
-			}
-
-			&.open {
-
-				&:after {
-	      transform: rotate(-135deg);
-			}
-
-		}
-
-		span {
-			font-size: 15px;
-			font-weight: 700;
-			color: #426995;
-		}
-
-		.list {
-			width: 100%;
-			border-radius: 0;			
-
-			.option {
-				font-size: 15px;
-				font-weight: 700;
-				color: #426995;
-				min-height: 35px;
-				line-height: 35px;
-
-					a {
-						font-size: 15px;
-						font-weight: 700;
-						color: #426995;
-
-						&:hover,
-						&:focus,
-						&:active {
-							text-decoration: none;
-							color: #426995;
-						}
-
-					}
-				
-				}
-
-			}
-
-		}	
-
-	}
 
 	.counter-list {
 		margin-top: 20px;

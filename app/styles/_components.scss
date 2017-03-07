@@ -714,6 +714,30 @@ body {
 		color: $page-color;	
 	}
 
+	.cathegory-button {
+		background: #fff;
+    display: inline-block;
+    height: 32px;
+    color: #8474d6;
+		border: 1px solid #8474d6;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 32px;
+    vertical-align: middle;
+    border-radius: 3px;
+
+		&:hover,
+		&:focus,
+		&:active {
+			transition: background .5s ease;
+			text-decoration: none;
+			background: #8474d6;
+			color: #fff;
+		}
+		
+	}
+
 
 
 

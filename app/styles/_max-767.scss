@@ -711,6 +711,14 @@ $blue-color: #3c4f90;
 			float: none;
 		}
 
+		.button-item {
+		width: calc(20% - 4px);
+
+		.cathegory-button {
+			font-size: 12px;			
+		}
+	}
+
 		.product-slider-for {
 			height: 222px;
 		}
