@@ -27,7 +27,7 @@ $blue-color: #3c4f90;
 .modal-open {
 
 	.create-modal {
-		overflow-y: hidden;		
+		//overflow-y: hidden;		
 	}
 
 }
@@ -40,8 +40,8 @@ $blue-color: #3c4f90;
 
 	.modal-body {
 			padding: 30px 0;
-			max-height: 690px;
-			overflow-y: auto;
+		//	max-height: 690px;
+			//overflow-y: auto;
 			webkit-overflow-scrolling: touch;
 	}	
 
