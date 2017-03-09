@@ -70,6 +70,7 @@ body {
 		width: 100%;
 		height: 100%;
 	}
+
 }
 
 .title-description {
@@ -102,6 +103,15 @@ body {
 	}
 
 }
+
+.info-title {
+		text-transform: uppercase;
+		color: #2e4288;
+		font-size: 13px;
+		font-weight: 700;
+		letter-spacing: 1px;	
+	}
+
 
 //feedback-block
 
@@ -737,6 +747,27 @@ body {
 		}
 		
 	}
+
+	.create-button {
+		display: inline-block;
+		font-size: 16px;
+		padding: 0 15px;
+		color: #8474d6;
+		border: 1px solid #8474d6;
+		background: transparent;
+		height: 44px;
+		line-height: 44px;
+		border-radius: 3px;
+		text-align: center;
+
+		&:hover {
+			background: #8474d6;
+			color: #fff;
+			text-decoration: none;
+		}
+
+	}
+
 
 
 

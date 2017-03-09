@@ -46,11 +46,12 @@ $blue-color: #3c4f90;
 	.cart-head {
 		text-align: center;
 		font-size: 14px;
+		height: 40px
 	}
 
 	.cart-body {
 		//height: 240px; /* 3 товара*/
-		height: calc(208px - 60px);
+		height: calc(210px - 40px);
 		overflow: auto;
 		-webkit-overflow-scrolling: touch;
 		padding: 0 15px;
