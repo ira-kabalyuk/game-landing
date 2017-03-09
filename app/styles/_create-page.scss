@@ -126,6 +126,7 @@ $blue-color: #3c4f90;
 		color: #bbb;
 	}
 
+
 	::-webkit-input-placeholder {color:#bbb;}
 	::-moz-placeholder          {color:#bbb;}/* Firefox 19+ */
 	:-moz-placeholder           {color:#bbb;}/* Firefox 18- */
@@ -196,6 +197,7 @@ $blue-color: #3c4f90;
 //checkbox
 
 .checkbox-blcok {
+	border-bottom: 1px solid $border-color;
 	text-align: justify;
 	
 	&:after {
@@ -270,8 +272,7 @@ $blue-color: #3c4f90;
 
 	}
 
-	.create-price-block {
-		border-top: 1px solid $border-color;
+	.create-price-block {		
 		text-align: center;	
 		padding-top: 15px;	
 
@@ -302,5 +303,30 @@ $blue-color: #3c4f90;
 	.catalog-button {
 		width: 230px;
 	}
+
+	//tab_content-2
+
+	.select-wrap {
+
+		.nice-select {
+			width: 380px;
+			margin: 30px auto;
+			float: none;
+		}
+	
+	}
+
+		.tab_content-2 {
+
+			.create-item {
+				margin-bottom: 30px;
+
+				.img-wrap{
+					cursor: pointer;
+				}
+
+			}
+
+		}	
  
 }
