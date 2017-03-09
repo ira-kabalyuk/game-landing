@@ -936,6 +936,10 @@ $blue-color: #3c4f90;
 
   .create-page {
 
+		.content {
+			padding: 3.6rem 15px;
+		}
+
 	  //tabs
 
 	  .tabs {
@@ -966,6 +970,24 @@ $blue-color: #3c4f90;
 		}
 
 	  //tabs-end
+
+		.create-wrap {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+		.create-list {
+			flex-direction: column;
+		}
+
+    .create-item {
+			float: none;
+      padding: 30px;
+      width: 350px;
+      margin: 15px auto;
+			
+    }
+
   }
 
   //END CREATE-PAGE

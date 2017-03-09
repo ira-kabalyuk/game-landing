@@ -240,5 +240,45 @@ $blue-color: #3c4f90;
   }
 
   //END ONE-NEWS-PAGE 
+
+  //CREATE-PAGE
+
+  .create-page {
+
+    .create-wrap {
+    margin-left: -15px;
+    margin-right: -15px;
+    }
+
+    .create-item {
+      padding: 15px;
+      width: calc(33.33% - 30px);
+      margin: 0 15px;
+    }
+
+    .checkbox-wrap {
+      display: block;
+    }
+
+  }
+
+  //modal
+
+  .create-modal {
+
+    .modal-dialog {
+      width:90%;     
+    }
+   
+  }
+
+  .content-item {
+    width: calc(50% - 30px);
+  }
+
+  //end modal
+
+ // END CREATE-PAGE
+
   
 }

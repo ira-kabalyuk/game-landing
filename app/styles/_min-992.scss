@@ -78,6 +78,40 @@ $blue-color: #3c4f90;
   }
 
   //END ABOUT-PAGE 
+
+  //END ONE-NEWS-PAGE 
+
+  //CREATE-PAGE
+
+  .create-page {
+
+     .create-wrap {
+      margin-left: -32px;
+      margin-right: -32px;
+    }
+
+    .create-item {
+      padding: 30px;
+      width: calc(33.33% - 64px);
+      margin: 0 32px;
+    }
+
+    .checkbox-wrap {
+      display: inline-block;
+    }
+
+    //popup
+
+    .content-item {
+      width: calc(33.333333% - 30px);
+    }
+
+    //end popup
+
+
+  }
+
+ // END CREATE-PAGE  
   
   
 }

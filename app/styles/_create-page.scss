@@ -39,7 +39,7 @@ $blue-color: #3c4f90;
 
 		&:last-child {
 			border-radius: 0 3px 3px 0;
-			margin-left: -5px;
+			margin-left: -6px;
 		}
 
 	}
@@ -80,18 +80,16 @@ $blue-color: #3c4f90;
 		text-align: center;
 	}
 
-	.create-wrap {
-		margin-left: -32px;
-		margin-right: -32px;
+	.create-list {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
 	}
 
-	.create-item {
-		float: left;
-		margin: 0 32px;
-		width: 33.33%;
+	.create-item {		
 		border: 1px solid $border-color;
 		border-radius: 3px;
-		padding: 30px;
+		
 
 		.img-wrap {
 			border-radius: 3px;
@@ -139,7 +137,7 @@ $blue-color: #3c4f90;
 		border: 1px solid $border-color;
 		height: 44px;
 		line-height: 44px;
-		margin-top: 10px;
+		margin: 10px auto 15px 0;
 
 		&:after {
 			border-bottom: 1px solid #bbb;
@@ -186,6 +184,123 @@ $blue-color: #3c4f90;
 
 		}
 
+		.create-item-title {
+			font-size: 15px;
+			color: #8a8a8a;
+			text-align: center;
+			text-transform: uppercase;
+			font-weight: 600;	
+			margin-bottom: 15px;		
+		}
+
+//checkbox
+
+.checkbox-blcok {
+	text-align: justify;
+	
+	&:after {
+		content: "";
+    display: inline-block;
+    width: 100%;		
+	}
+
+}
+
+.checkbox-wrap {
+	display: inline-block;
+	//width: 33.33%;
+
+	input {
+		display: inline-block;
+		margin: 0;
+		margin-right: 5px;
+	}
+
+	label {
+		display: inline-block;
+		font-size: 14px;
+		color: #8a8a8a;
+		font-weight: 400;
+	}
+
+}	
+
+	.label-checkbox {
+		position: relative;
+		//line-height: 135%;	
+		cursor: pointer;
+	}
+
+	.checkbox {
+		position: relative;	
+		cursor: pointer;	
+		
+		&:before {
+			transition: transform .4s cubic-bezier(.45,1.8,.5,.75);
+			transform: rotate(-45deg) scale(0, 0);    
+			content: "";    
+			position: absolute;
+			left: 3px;
+			bottom: 3px;
+			z-index: 1;  
+			width: 9px;
+			height: 8px;    
+			border: 2px solid $border-color;; 
+     border-top-style: none;
+  	 border-right-style: none;
+  }
+  
+		&:checked {
+
+			&:before {
+				transform: rotate(-45deg) scale(1, 1);
+				} 
+		}
+  
+		&:after {
+			content: "";			
+			position: absolute;			
+			left: 0;			
+			width: 15px;
+			height: 15px;			
+			background: #fff;			
+			border: 1px solid $border-color;			
+			cursor: pointer;
+		}
+
+	}
+
+	.create-price-block {
+		border-top: 1px solid $border-color;
+		text-align: center;	
+		padding-top: 15px;	
+
+		span {		
+			font-weight: 400;
+			display: inline-block;
+			font-size: 20px;
+			color: #000;			
+		}
+
+	}
+
+	.price-label {
+		display: inline-block;
+		font-size: 14px;
+		color: #8a8a8a;
+		vertical-align: top;
+		line-height: 20px;
+		margin-top: 2px;
+	}
+
 	//end form
+
+	.button-wrap {
+		margin-top: 50px;
+	}
+
+	.catalog-button {
+		width: 230px;
+	}
  
 }

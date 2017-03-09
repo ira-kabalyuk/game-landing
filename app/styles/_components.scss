@@ -760,12 +760,14 @@ body {
 		border-radius: 3px;
 		text-align: center;
 
-		&:hover {
+		&:hover,
+		&:focus	{
 			background: #8474d6;
 			color: #fff;
 			text-decoration: none;
-		}
-
+			transition: background .5s ease;
+		}	 
+	
 	}
 
 

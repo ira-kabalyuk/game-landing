@@ -1,5 +1,25 @@
 $icon-font-path: '../fonts/';
 
+@media only screen and (min-width: 1200px) {
+
+	//CREATE-PAGE
+
+	  //modal
+
+  .create-modal {
+
+    .modal-dialog {
+      width: 1200px;      
+    }
+   
+  }
+
+  //end modal
+
+	//END-CREATE-PAGE
+
+}
+
 @media only screen and (min-width: 541px) {
 
 	//FOOTER
