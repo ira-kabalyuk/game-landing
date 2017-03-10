@@ -68,6 +68,14 @@ $blue-color: #3c4f90;
 		display: none;
 	}
 
+	.tab_content-1 {
+
+		.create-list {
+			flex-wrap: nowrap;
+		}
+		
+	}
+
 	.tab_drawer_heading {
 		display: none;
 	}
