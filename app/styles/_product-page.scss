@@ -99,7 +99,16 @@ $blue-color: #3c4f90;
 	}
 
 	.info-block {
-		margin: 23px 0;
+		margin: 23px 0;	
+
+		.size-button {
+			display: inline-block;
+			width: auto;
+			padding: 0 15px;
+			margin-top: 15px;
+
+			display: none;
+		}	
 	}
 
 	.info-title {		
@@ -109,11 +118,7 @@ $blue-color: #3c4f90;
 	.info-text {
 		font-size: 15px;
 		padding: 5px 0;
-	}
-
-	.button-list {
-				
-	}
+	}	
 
 	.button-item {
 		width: 150px;
