@@ -399,6 +399,7 @@ opacity:1;
 
 .title-button {
 		color: #fff;
+		text-decoration: none;
 		font-size: 16px;
 		font-weight: 600;
 		text-align: center;
@@ -409,14 +410,38 @@ opacity:1;
 		padding: 12px 21px;
 		margin-top: 35px;
 
-		&:hover,
-		&:focus,
-		&:active {
-			color: $page-color;
-			background: rgba(255,255,255,0.3);
+		overflow: hidden;
+  		position: relative;
+
+		&:after {
+			background: #fff;
+			content: "";
+			height: 155px;
+			left: -75px;
+			opacity: .2;
+			position: absolute;
+			top: -50px;
+			transform: rotate(35deg);
+			transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+			width: 50px;
+			z-index: -10;
+		}
+
+		&:focus {
+			color: #fff;			
+			text-decoration: none;
+		}
+
+		&:hover {
+			color: #fff;			
 			text-decoration: none;
 			transition: background .5s ease;
-		}
+
+			 &:after {
+				left: 120%;
+				transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+			}
+		}		
 	}
 
 	.title-button.title-button-color {

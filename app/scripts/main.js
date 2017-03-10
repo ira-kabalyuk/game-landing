@@ -194,11 +194,15 @@ jQuery(document).ready(function() {
 
    //end footer tab
 
+    if ($('html').width() > 1025) {
+
 
     $('.post').addClass("is-hidden").viewportChecker({
         classToAdd: 'visible animated fadeIn',
         offset: 100
-    });    
+    });
+
+    }    
 
    
     /*$('html').smoothScroll(300);*/

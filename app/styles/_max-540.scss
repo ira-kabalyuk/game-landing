@@ -19,10 +19,10 @@ $blue-color: #3c4f90;
 	}
 
 	.cart {
-		height: auto;
+		max-height: 320px;
 
 		.cart-body {
-  		height: calc(300px - 60px);
+  			max-height: calc(300px - 60px);
   		}
 
   		.cart-footer {
@@ -592,8 +592,14 @@ $blue-color: #3c4f90;
 
   .cart-page {
 
+	  .cart {
+		  max-height: 100%;
+		  height: 100%;
+	  }
+
   	.cart-body {
-		height: auto;
+		max-height: 100%;
+		height: 100%;
   	}
 
   	.catalog-button {
