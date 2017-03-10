@@ -40,6 +40,15 @@ $blue-color: #3c4f90;
 			vertical-align: middle;
 		}
 
+		&:hover {
+			transform: scale(1.1);
+			transition: all .5s;
+		}
+
+		&:not(:hover) {
+			transition: all .5s;
+		}	
+
 	}	
 
 	.bg-1 {
