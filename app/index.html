@@ -21,21 +21,45 @@
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
   
-  <header class="header">      
-   
-  </header>
+ 
   
-  <main class="main">
-    <div class="content">
-      
-    </div>
-  </main>
+  <main class="main" id="fullpage">
+		<div class="section">
+			<video id="bgvid" playsinline autoplay muted loop> 
+			<!--<source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">-->
+			<source src="images/video/bg-video.mp4" type="video/mp4">
+			</video>
+				<div class="container">
+					<ul class="nav__list">
+						<li class="nav__item"><a href="">Comunity</a></li>
+						<li class="nav__item"><a href="">Custumize</a></li>
+						<li class="nav__item"><a href="">Safety</a></li>
+					</ul>
+					<div class="logo-wrap">
+							<img src="images/logo.png" alt="">
+					</div>
+					<div class="content-wrap" id="txt">
+						<h1 class="title">Virtual Sex &<br>3D Sex Game</h1>					
+						<!--<button>Pause</button>-->
+					</div>
+					<div class="button-wrap mt-130 mb-130">
+						<button class="button">Donwload now</button>
+					</div>
+					<ul class="sign-block__list">
+						<li class="sign-block__item"><a href="">Login</a></li>
+						<li class="sign-block__item"><a href="">Register</a></li>
+					</ul>
+				</div>				
+		</div>
+		<div class="section">Some section</div>
+		<div class="section">Some section</div>
+		<div class="section">Some section</div>
+	</main>
 
-  <footer class="footer">
-    
-  </footer>
+  
     <!-- build:js scripts/vendor.js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>   
+    <script src="/bower_components/jquery/dist/jquery.js"></script>  
+		<script src="/bower_components/fullpage.js/dist/jquery.fullpage.min.js"></script>  
     
     <!-- endbuild -->
 
@@ -58,9 +82,7 @@
    
     <!-- build:js scripts/main.js -->
     <script src="scripts/jquery.smoothscroll.min.js"></script>
-    <script src="scripts/jquery.viewportchecker.min.js"></script>
-    <script src="scripts/jquery.nice-select.min.js"></script>
-    <script src="scripts/slick.min.js"></script>
+    <script src="scripts/jquery.viewportchecker.min.js"></script>    
     <script src="scripts/main.js"></script>    
     <!-- endbuild -->
 
