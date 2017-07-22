@@ -1,0 +1,32 @@
+$icon-font-path: '../fonts/';
+
+$page-color: #393939;
+$gray-color: #858585;
+$border-color: #d8d8d8;
+$black-color: #111111;
+$blue-color: #3c4f90;
+
+@media only screen and (max-width: 1025px) {
+
+	.container {
+		width: 100%;
+		padding: 20px 15px;
+	}
+
+	.nav-buttons {
+
+		&__list {
+			right: 30px;
+		}
+		
+	}
+
+	//section-3
+
+	.dohots {
+
+		&__list {
+		margin: 0 50px 0 0;
+		}
+	}
+}

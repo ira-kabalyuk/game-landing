@@ -1,0 +1,80 @@
+$icon-font-path: '../fonts/';
+
+$page-color: #393939;
+$gray-color: #858585;
+$border-color: #d8d8d8;
+$black-color: #111111;
+$blue-color: #3c4f90;
+
+@media only screen and (max-width: 768px) {
+
+	.content {
+		&__right {
+			max-width: 100%;
+			width: 100%;
+			margin: 0 auto;
+			padding: 0;
+		}
+
+			&__left {
+			max-width: 100%;
+			width: 100%;
+			margin: 0 auto;
+			padding: 0;
+		}
+	}
+
+	
+	//section-3
+
+	.dohots {
+
+		&__list {			
+		}
+
+		&__label {
+			font-size: 20px;
+		}
+	}
+
+	.timer {
+		font-size: 60px;		
+	}
+
+	.icon {
+		margin-bottom: 55px;
+	}
+
+	//section-4
+
+	.section-4 {	
+		background-position: 100% 0;
+	}
+
+
+	//section-5
+
+		.column {
+
+		&__wrap {
+			flex-wrap: wrap;
+		}
+
+		&__left {
+			width: 100%;
+			flex-basis: 100%;    
+			flex-shrink: 0;
+			margin-bottom: 20px;		
+		}
+
+		&__right {
+			//width: 390px;
+			width: 100%;
+		}
+	}
+
+	.img-wrap-border {
+		margin: 0 auto;
+	}
+	
+}

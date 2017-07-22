@@ -8,7 +8,61 @@ $blue-color: #3c4f90;
 
 @media only screen and (max-width: 540px) {
 
-	
+	.nav {
+
+		&__item {
+			a {
+				font-size: 16px;
+			}		
+		}
+	}
+
+	//section-3
+
+	.icon {
+		height: 160px;
+	}
+
+	.dohots {
+
+		&__list {
+			flex-wrap: wrap;
+		}
+
+		&__item {
+			width: calc(50% - 40px);
+
+			&:nth-child(1) {
+				margin-bottom: 10px;
+			}
+
+			&:nth-child(2) {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	//section-5
+
+	.column {	
+
+		&__left {
+			width: 100%;		
+			margin-bottom: 20px;	
+			height: auto;	
+		}
+
+		&__right {
+			//width: 390px;
+			width: 100%;
+		}
+	}
+
+	.img-wrap-border {
+		width: 150px;
+		height: 150px
+	}
+
 
 }
 
