@@ -75,6 +75,27 @@ $blue-color: #3c4f90;
 	.news-text {
 		font-size: 14px;
 	}
+
+	//section-9 footer
+
+	.footer {	
+
+		&__wrap {
+			height: 100%;
+		}	
+	}
+
+	.social {
+
+		&__list {
+			margin-right: 0;
+			margin-bottom: 10px;
+		}
+	}
 }
+
+
+
+	
 
 

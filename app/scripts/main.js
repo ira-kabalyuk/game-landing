@@ -17,7 +17,7 @@ jQuery(document).ready(function() {
 	$(document).ready(function() {
 		$('#fullpage').fullpage({
 		navigation: true,		
-		anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection', 'sixSection', 'sevenSection', 'eightSection'],
+		anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection', 'sixSection', 'sevenSection', 'eightSection', 'nineSection'],
 		scrollOverflow: true,
 		slidesNavigation: true	
 		});
@@ -218,6 +218,14 @@ jQuery(document).ready(function() {
 
 		$('.news-text').shorten({
 			showChars: 15,
+		});
+
+	}
+
+		if ($('html').width() > 768) {
+
+		$('.news-text').shorten({
+			showChars: 60,
 		});
 
 	}

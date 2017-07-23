@@ -76,5 +76,27 @@ $blue-color: #3c4f90;
 	.img-wrap-border {
 		margin: 0 auto;
 	}
-	
+
+	//section-9 footer
+
+	.footer {		
+
+		&__left-column {
+			width: calc(100% - 40px);
+		
+		}
+
+		&__right-column {
+			width: calc(100% - 40px);	
+		}
+
+		&__text {
+			width: 100%;
+			font-size: 16px;
+			color: #3c3535;
+			font-weight: 100;
+			margin-top: 50px;
+		}
+	}	
 }
+
