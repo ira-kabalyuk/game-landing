@@ -13,12 +13,10 @@ $blue-color: #3c4f90;
 		padding: 20px 15px;
 	}
 
-	.nav-buttons {
-
-		&__list {
-			right: 30px;
-		}
-		
+	#fp-nav {
+		&.right {
+			right: 30px;		
+		}		
 	}
 
 	//section-3

@@ -63,6 +63,18 @@ $blue-color: #3c4f90;
 		height: 150px
 	}
 
+	//section-8
 
+	.news {
+
+		&__item {
+			width: calc(50% - 40px);
+		}
+	}
+
+	.news-text {
+		font-size: 14px;
+	}
 }
+
 

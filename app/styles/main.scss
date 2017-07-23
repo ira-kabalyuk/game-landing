@@ -8,6 +8,7 @@ $icon-font-path: '../fonts/';
 @import "_sprite";
 @import "_fonts";
 @import "_fullpage";
+@import "_magnific-popup";
 @import "_page";
 @import "_animate";
 @import "_footer";
@@ -19,6 +20,6 @@ $icon-font-path: '../fonts/';
 @import "_max-768.scss";
 @import "_max-767.scss";
 @import "_max-667.scss";
+@import "_max-568.scss";
 @import "_max-540.scss";
-@import "_max-375.scss";
 

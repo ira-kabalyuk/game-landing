@@ -8,12 +8,9 @@ $blue-color: #3c4f90;
 
 @media only screen and (max-width: 767px) {
 
-	.nav-buttons {
-		&__list {
-			display: none;
-		}
-	}
-
+#fp-nav {
+	display: none;
+}
 .nav {
 
 	&__list {
@@ -122,5 +119,34 @@ $blue-color: #3c4f90;
 		height: 200px;
 	}
 
+		.video-slide {
+
+		&:after {
+			width: 70px;
+			height: 70px;
+			margin-top: -35px;
+			margin-left: -35px;
+		}
+
+	}
+
+	//section-8
+
+	.news {
+
+		&__list {
+			height: 100%;
+		}
+	}
+
+	.news-text {
+		font-size: 16px;
+		margin-top: 7px;
+	}
+
 }
+
+
+
+
 
