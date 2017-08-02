@@ -2,45 +2,100 @@ console.log('\'Allo \'Allo!');
 
  
 jQuery(document).ready(function() {
+	if($(document).width() > 1025) { 
+				$('.show').css({'animation-delay': '0.5s', 'animation-duration': '1s'}).addClass('animated bounceIn');
+				$('.zoom').css({'animation-delay': '0.5s', 'animation-duration': '1s'}).addClass('animated zoomIn');
+				$('.logo-ret').css({'animation-delay': '0.3s', 'animation-duration': '0.5s'}).addClass('animated rotateIn');
+				// var el = getElementById('asdasd');
+				// el.style.animationDelay = '0.5s'
+      }
 
+	/////
 
-    if ($('html').width() > 1025) {
+	 var $isAnimatedSecond = $('.second .is-animated'),
+      $isAnimatedSecondSingle = $('.second .is-animated__single'),
+      $isAnimatedThird = $('.third .is-animated'),
+      $isAnimatedThirdSingle = $('.third .is-animated__single'),
+      $isAnimatedFourth = $('.fourth .is-animated'),
+      $isAnimatedFourthSingle = $('.fourth .is-animated__single');
 
+	
+  // variables  
+	
+(function($) {
+  
+  'use strict';
 
-    $('.post').addClass("is-hidden").viewportChecker({
-        classToAdd: 'visible animated fadeIn',
-        offset: 100
+  // initialize fullPage
+  $('#fullpage').fullpage({		
+		anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection', 'sixSection', 'sevenSection'],
+		// scrollOverflow: true,
+		// slidesNavigation: true,
+    navigation: true,
+    onLeave: function(index, nextIndex, direction) {
+			if(nextIndex == 3) {
+				$('.count-number').countTo({       
+        speed: 3000       
     });
 
-	} 
-	
-	$(document).ready(function() {
-		$('#fullpage').fullpage({
-		navigation: true,		
-		anchors: ['firstSection', 'secondSection', 'thirdSection', 'fourthSection', 'fifthSection', 'sixSection', 'sevenSection', 'eightSection', 'nineSection'],
-		scrollOverflow: true,
-		slidesNavigation: true	
-		});
-	});
-   
-    /*$('html').smoothScroll(300);*/
+				/*$('#playBtn').trigger('click');*/
+			}			
+      
+      if(nextIndex == 2 && $(document).width() > 1025) { 
+				$('.show-2').css({'animation-delay': '0.5s', 'animation-duration': '1s'}).addClass('animated bounceIn');
+				$('.zoom-2').css({'animation-delay': '1s', 'animation-duration': '1.5s'}).addClass('animated zoomIn');
+      }	
 
-	$(".nav-buttons__item").click(function( e ) {        
-			$(".nav-buttons__item").removeClass("button-active")
-			$(this).addClass("button-active");
-			
-	});
+			if(nextIndex == 3 && $(document).width() > 1025) {			
+				$('.zoom-3').css({'animation-delay': '0.5s', 'animation-duration': '1s'}).addClass('animated zoomIn');				
+      }	
+
+			if(nextIndex == 4 && $(document).width() > 1025) {			
+				$('.show-4').css({'animation-delay': '0.5s', 'animation-duration': '1s'}).addClass('animated bounceIn');
+				$('.zoom-4').css({'animation-delay': '1s', 'animation-duration': '1.5s'}).addClass('animated zoomIn');
+      }
+
+			if(nextIndex == 5 && $(document).width() > 1025) {			
+				$('.deg').css({'animation-delay': '1s', 'animation-duration': '2s'}).addClass('animated flip');
+				$('.post').css({'animation-delay': '1s', 'animation-duration': '1s'}).addClass('animated fadeIn');
+      }	
+
+				if(nextIndex == 6 && $(document).width() > 1025) {			
+				$('.show-6').css({'animation-delay': '0.5s', 'animation-duration': '1s'}).addClass('animated bounceIn');
+				$('.zoom-6').css({'animation-delay': '1s', 'animation-duration': '1.5s'}).addClass('animated zoomIn');
+      }	
+
+				if(nextIndex == 7 && $(document).width() > 1025) {			
+				$('.down').css({'animation-delay': '2s', 'animation-duration': '2s'}).addClass('animated slideInDown');
+				$('.popup-link').css({'animation-delay': '1s', 'animation-duration': '1s'}).addClass('animated bounceIn');
+      }
+		
+    }
+
+  });
 
 
-	$('.popup-gallery').magnificPopup({  
-		gallery: {
-			enabled: true,			
-		},
 
-		image: {
-			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-			
-		},
+		var popupConfig = {  
+			gallery: {
+				enabled: true,			
+			},
+			type: 'image', // this is default type
+			callbacks: {
+				open: function() {
+					var el = $(this.content);
+					var video = el.find('video')[0];
+					if(video) {
+						if(video.readyState == 4) {
+							video.play();
+						} else {
+							video.oncanplay = function() {
+									video.play();
+							};
+						}
+					}
+				},
+			},
 			items: [
 				{
 					src: '#v1',
@@ -61,156 +116,35 @@ jQuery(document).ready(function() {
 				},				
 
 				{
-					src: 'images/img-5.jpg'
+					src: 'images/img-6.jpg'
 				},
 				{
 					src: '#v2',
 					type: 'inline'
 				},   
 				{
-					src: 'images/img-7.jpg'
+					src: 'images/img-8.jpg'
 				}				
 			],
-			type: 'image' // this is default type
-	});
+	};
 
+	var popupLinks = $('.popup-gallery').find('.popup-link')
+	popupLinks.click(function(){
+		var index = popupLinks.index(this);
+		$.magnificPopup.open(popupConfig, index);
+	})
   
-/*bg-video*/
+})(jQuery);
 
-	/*var vid = document.getElementById("bgvid");
-	var pauseButton = document.querySelector("#txt button");
+	
+	
+    /*$('html').smoothScroll(300);*/
 
-	if (window.matchMedia('(prefers-reduced-motion)').matches) {
-			vid.removeAttribute("autoplay");
-			vid.pause();
-			pauseButton.innerHTML = "Paused";
-	}
-
-	function vidFade() {
-		vid.classList.add("stopfade");
-	}
-
-	vid.addEventListener('ended', function()
-	{
-	// only functional if "loop" is removed 
-	vid.pause();
-	// to capture IE10
-	vidFade();
+	$(".nav-buttons__item").click(function( e ) {        
+			$(".nav-buttons__item").removeClass("button-active")
+			$(this).addClass("button-active");
+			
 	}); 
-
-
-		pauseButton.addEventListener("click", function() {
-			vid.classList.toggle("stopfade");
-			if (vid.paused) {
-				vid.play();
-				pauseButton.innerHTML = "Pause";
-			} else {
-				vid.pause();
-				pauseButton.innerHTML = "Paused";
-			}
-	})*/
-
-
-//number animation
-
-(function ($) {
-	$.fn.countTo = function (options) {
-		options = options || {};
-		
-		return $(this).each(function () {
-			// set options for current element
-			var settings = $.extend({}, $.fn.countTo.defaults, {
-				from:            $(this).data('from'),
-				to:              $(this).data('to'),
-				speed:           $(this).data('speed'),
-				refreshInterval: $(this).data('refresh-interval'),
-				decimals:        $(this).data('decimals')
-			}, options);
-			
-			// how many times to update the value, and how much to increment the value on each update
-			var loops = Math.ceil(settings.speed / settings.refreshInterval),
-				increment = (settings.to - settings.from) / loops;
-			
-			// references & variables that will change with each update
-			var self = this,
-				$self = $(this),
-				loopCount = 0,
-				value = settings.from,
-				data = $self.data('countTo') || {};
-			
-			$self.data('countTo', data);
-			
-			// if an existing interval can be found, clear it first
-			if (data.interval) {
-				clearInterval(data.interval);
-			}
-			data.interval = setInterval(updateTimer, settings.refreshInterval);
-			
-			// initialize the element with the starting value
-			render(value);
-			
-			function updateTimer() {
-				value += increment;
-				loopCount++;
-				
-				render(value);
-				
-				if (typeof(settings.onUpdate) == 'function') {
-					settings.onUpdate.call(self, value);
-				}
-				
-				if (loopCount >= loops) {
-					// remove the interval
-					$self.removeData('countTo');
-					clearInterval(data.interval);
-					value = settings.to;
-					
-					if (typeof(settings.onComplete) == 'function') {
-						settings.onComplete.call(self, value);
-					}
-				}
-			}
-			
-			function render(value) {
-				var formattedValue = settings.formatter.call(self, value, settings);
-				$self.html(formattedValue);
-			}
-		});
-	};
-	
-	$.fn.countTo.defaults = {
-		from: 0,               // the number the element should start at
-		to: 0,                 // the number the element should end at
-		speed: 1000,           // how long it should take to count between the target numbers
-		refreshInterval: 100,  // how often the element should be updated
-		decimals: 0,           // the number of decimal places to show
-		formatter: formatter,  // handler for formatting the value before rendering
-		onUpdate: null,        // callback method for every time the element is updated
-		onComplete: null       // callback method for when the element finishes updating
-	};
-	
-		function formatter(value, settings) {
-			return value.toFixed(settings.decimals);
-		}
-	}(jQuery));
-
-	jQuery(function ($) {
-		// custom formatting example
-		$('.count-number').data('countToOptions', {
-		formatter: function (value, options) {
-			return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
-		}
-		});
-		
-		// start all the timers
-		$('.timer').each(count);  
-		
-		function count(options) {
-		var $this = $(this);
-		options = $.extend({}, options || {}, $this.data('countToOptions') || {});
-		$this.countTo(options);
-		}
-	});
 
 	//more
 
@@ -229,6 +163,53 @@ jQuery(document).ready(function() {
 		});
 
 	}
+
+	//рулетка
+
+	  $('.slot-1').jSlots({  
+        spinner : '#playBtn_1',
+				time : 4000,
+        winnerNumber : 3,
+				loops : 8,
+				easing : 'linear' 
+    });
+
+		 $('.slot-2').jSlots({  
+        spinner : '#playBtn_2',
+				time : 4000,
+        winnerNumber : 3,
+				loops : 8,
+				easing : 'linear' 
+    });  
+
+		 $('.slot-3').jSlots({  
+        spinner : '#playBtn_3',
+				time : 4000,
+        winnerNumber : 3,
+				loops : 8,
+				easing : 'linear' 
+    });  
+
+		 $('.slot-4').jSlots({  
+        spinner : '#playBtn_4',
+				time : 4000,
+        winnerNumber : 3,
+				loops : 8,
+				easing : 'linear' 
+    });    
+
+/*	$.jSlots.defaultOptions = {  
+    number : 4,          // Number: number of slots  
+    winnerNumber : 1,    // Number: list item number upon which to trigger a win, 1-based index, NOT ZERO-BASED  
+    spinner : '',        // CSS Selector: element to bind the start event to  
+    spinEvent : 'click', // String: event to start slots on this event  
+    onStart : $.noop,    // Function: runs on spin start,  
+    onEnd : $.noop,      // Function: run on spin end. It is passed (finalNumbers:Array). finalNumbers gives the index of the li each slot stopped on in order.  
+    onWin : $.noop,      // Function: run on winning number. It is passed (winCount:Number, winners:Array, finalNumbers:Array)  
+    easing : 'swing',    // String: easing type for final spin. I recommend the easing plugin and easeOutSine, or an easeOut of your choice.  
+    time : 7000,         // Number: total time of spin animation  
+    loops : 6            // Number: times it will spin during the animation
+};  */
 
 
 });

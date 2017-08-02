@@ -19,8 +19,12 @@ $blue-color: #3c4f90;
 
 	//section-3
 
+	.jSlots-wrapper {
+		height: 120px;
+	}
+
 	.icon {
-		height: 160px;
+		//height: 160px;
 	}
 
 	.dohots {
@@ -44,6 +48,17 @@ $blue-color: #3c4f90;
 
 	//section-5
 
+	.section-5 {
+		
+		.mt-30 {
+			margin-top: 15px;
+		}
+
+		.mb-30 {
+			margin-bottom: 15px;
+		}
+	}
+
 	.column {	
 
 		&__left {
@@ -61,6 +76,15 @@ $blue-color: #3c4f90;
 	.img-wrap-border {
 		width: 150px;
 		height: 150px
+	}
+
+		.text {
+		font-size: 18px;
+
+		&__italic {
+			font-size: 14px;
+		}
+
 	}
 
 	//section-8

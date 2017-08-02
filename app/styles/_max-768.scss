@@ -54,6 +54,20 @@ $blue-color: #3c4f90;
 
 	//section-5
 
+	.section-5 {
+		.flex-container {
+			justify-content: flex-start;
+		}
+
+		.mt-30 {
+			margin-top: 20px;
+		}
+
+		.mb-30 {
+			margin-bottom: 20px;
+		}
+	}
+
 		.column {
 
 		&__wrap {

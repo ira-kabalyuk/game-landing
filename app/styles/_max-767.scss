@@ -17,12 +17,10 @@ $blue-color: #3c4f90;
 		max-width: 100%;
 	}
 	&__item {
+		margin: 0 10px;
 		a {
 			font-size: 18px;
-		}
-
-		&:after {
-			padding: 0 10px;
+			
 		}
 	}
 }
@@ -52,7 +50,7 @@ $blue-color: #3c4f90;
 		}
 
 		&__italic {
-			font-size: 18px;
+			font-size: 16px;
 		}
 
 	}
@@ -62,16 +60,19 @@ $blue-color: #3c4f90;
 		
 	}
 
-	.logo-wrap {
-		width: 100px;
-		width: 150px;
+	.logo {
+		max-width: 120px;		
 	}
 
 	//section-3
 
+	.jSlots-wrapper {
+		height: 110px;
+	}
+
 	.icon {
     margin-bottom: 10px;
-		height: 160px;		
+	//	height: 160px;		
 	}
 
 	.timer {
@@ -87,6 +88,19 @@ $blue-color: #3c4f90;
 	}
 
 	//section-5 
+
+	.section-5 {
+
+		.img-wrap {
+			height: 60%;
+			width: 100%;
+			left: 0;
+
+			img {
+			width: auto;			
+			}
+		}
+	}
 
 		.column {
 
