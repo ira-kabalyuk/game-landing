@@ -6,6 +6,40 @@ $border-color: #d8d8d8;
 $black-color: #111111;
 $blue-color: #3c4f90;
 
+//download spinner
+
+#p_prldr{
+position: fixed;
+left: 0;
+top: 0;
+right:0;
+bottom:0;
+background: #9A12B3;
+z-index: 30;}
+ 
+.contpre{
+width: 250px;
+height: 100px;
+position: absolute;
+left: 50%;top: 48%;
+margin-left:-125px;
+margin-top:-75px;
+color:#fff;
+font-size:40px;
+letter-spacing:-2px;
+text-align:center;
+line-height:35px;}
+ 
+#p_prldr .svg_anm {
+position: absolute;
+width: 41px;
+height: 41px;
+background: url(../images/pufff.svg) center center no-repeat;
+background-size:41px;    
+margin: -16px 0 0 -16px;}
+
+//end download spinner
+
 html {
 	height: 100%;
 	overflow-x: hidden; 
@@ -280,6 +314,7 @@ body {
 	font-family: 'Againts', sans-serif;
 	text-align: center;
 	cursor: pointer;
+	letter-spacing: 1px;
 	font-size: 55px;
 	font-weight: 400;
 	border: none;
@@ -344,7 +379,7 @@ body {
 //section-2
 
 .section-2 {
-	background: url(../images/section-2-bg.jpg) no-repeat;
+	//background: url(../images/section-2-bg.jpg) no-repeat;
 	background-size: cover;
 }
 
@@ -401,8 +436,8 @@ body {
 	}
 }
 
-#playBtn {
-	//display: none;
+.playBtn {
+	display: none;
 }
 
 .icon-1 {
@@ -448,7 +483,7 @@ body {
 //section-4
 
 .section-4 {
-	//background: url(../images/section-4-bg.jpg) no-repeat;
+	background: url(../images/section-4-bg.jpg) no-repeat;
 	background-size: cover;
 }
 
@@ -493,7 +528,7 @@ body {
 //section-6
 
 .section-6 {
-	/*background: url(../images/section-6-bg.jpg) no-repeat;*/
+	background: url(../images/section-6-bg.jpg) no-repeat;
 	background-size: cover;	
 	color: #3c3535;
 }
@@ -513,7 +548,7 @@ body {
 		height: 100vh;
 
 		a {
-				display: block;
+				display: flex;
 				width: 33.33%;			
 				height: 33.33%;
 				position: relative;		
@@ -538,7 +573,7 @@ body {
 			align-items: center;
 			justify-content: center;
 			flex-direction: column;
-			cursor: default;
+			cursor: default;		
 		}
 		
 	}    
@@ -638,6 +673,23 @@ body {
 
 .popup-link {
 	cursor: pointer;
+	overflow: hidden;
+
+	&:hover {
+
+			img {			
+				transform: scale(1.1);				
+				transition: all .5s;
+			}
+		
+		}
+
+		&:not(:hover) {
+
+			img {
+				transition: all .5s;
+			}			
+		}
 }
 
 .video-slide {
@@ -647,6 +699,7 @@ body {
 	&:after {
 		content: "";
 		background: url(../images/play-icon.png);
+		opacity: 0.7;
 		width: 138px;
 		height: 138px;
 		background-size: cover;
