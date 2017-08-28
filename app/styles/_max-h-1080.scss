@@ -1,0 +1,38 @@
+$icon-font-path: '../fonts/';
+
+$page-color: #393939;
+$gray-color: #858585;
+$border-color: #d8d8d8;
+$black-color: #111111;
+$blue-color: #3c4f90;
+
+@media only screen and (max-height: 900px) {
+
+	.title {
+		font-size: 70px;
+	}
+
+	.title__md {
+		font-size: 60px;
+	}
+
+	.text__lg {
+		font-size: 30px;
+	}
+
+	.text {
+		font-size: 20px;
+	}
+
+	.button {
+		font-size: 30px;
+	}
+
+	.count-number {
+		font-size: 60px;
+	}
+
+	.dohots__label {
+		font-size: 28px;
+	}
+}

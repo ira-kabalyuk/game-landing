@@ -48,8 +48,9 @@ jQuery(document).ready(function() {
 				
 				if(!pageVisited) {				
 
-				var spinTimePeriod = 1000;
+				var spinTimePeriod = 500;
 				var spinTime = 0;
+				var spinDelay = 500;
 				var spinners = $('.playBtn');
 
 				var counters = $('.count-number');
@@ -64,7 +65,7 @@ jQuery(document).ready(function() {
 						})
 					}, spinTime);
 
-					spinTime = spinTime + spinTimePeriod;
+					spinTime = spinTime + spinTimePeriod + spinDelay;
 				});
 
 					pageVisited = true;
@@ -97,8 +98,10 @@ jQuery(document).ready(function() {
       }	
 
 				if(nextIndex == 7 && $(document).width() > 1025) {				
-				$('.down').css({'animation-delay': '1s', 'animation-duration': '1s'}).addClass('animated slideInDown');
+				/*$('.down').css({'animation-delay': '1s', 'animation-duration': '1s'}).addClass('animated slideInDown');*/
 				$('.popup-link').css({'animation-delay': '0.2s', 'animation-duration': '1s'}).addClass('animated bounceIn');
+				$('.post-7').css({'animation-delay': '1.2s', 'animation-duration': '2s'}).addClass('animated fadeIn');
+				$('.post-77').css({'animation-delay': '1.5s', 'animation-duration': '2s'}).addClass('animated fadeIn');
       }
 		
     }
@@ -197,37 +200,19 @@ jQuery(document).ready(function() {
 
 	//рулетка
 
-	  $('.slot-1').jSlots({  
-        spinner : '#playBtn_1',
-				time : 1500,
-        winnerNumber : 3,
+	function initSlots() {
+		for(var i = 1; i <= 4; i++) {
+			$('.slot-' + i).jSlots({  
+				spinner : '#playBtn_' + i,
+				time : 1000,
+				winnerNumber : 3,
 				loops : 8,
-				easing : 'linear' 
-    });
+				easing : 'linear'
+			});
+		}
+	}
 
-		 $('.slot-2').jSlots({  
-        spinner : '#playBtn_2',
-				time : 1500,
-        winnerNumber : 3,
-				loops : 8,
-				easing : 'linear' 
-    });  
-
-		 $('.slot-3').jSlots({  
-        spinner : '#playBtn_3',
-				time : 1500,
-        winnerNumber : 3,
-				loops : 8,
-				easing : 'linear' 
-    });  
-
-		 $('.slot-4').jSlots({  
-        spinner : '#playBtn_4',
-				time : 1500,
-        winnerNumber : 3,
-				loops : 8,
-				easing : 'linear' 
-    });
+	initSlots();
 
 });
 

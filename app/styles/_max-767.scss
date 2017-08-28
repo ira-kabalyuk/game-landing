@@ -67,7 +67,7 @@ $blue-color: #3c4f90;
 	//section-3
 
 	.jSlots-wrapper {
-		height: 110px;
+		height: 90px;
 	}
 
 	.icon {
@@ -75,15 +75,19 @@ $blue-color: #3c4f90;
 	//	height: 160px;		
 	}
 
+	.dohots__label {
+		font-size: 16px;
+	}
+
 	.timer {
 		bottom: 25px;		
-    font-size: 40px;
+    font-size: 36px;
 		bottom: 35px;
 	}
 
 	.dohots {
 		&__list {
-			margin: 0;
+			margin: 10px 0;
 		}
 	}
 

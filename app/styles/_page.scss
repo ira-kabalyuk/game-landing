@@ -14,7 +14,8 @@ left: 0;
 top: 0;
 right:0;
 bottom:0;
-background: #9A12B3;
+background: url(../images/img-33.jpg) center center no-repeat;
+background-size: cover;
 z-index: 30;}
  
 .contpre{
@@ -32,10 +33,10 @@ line-height:35px;}
  
 #p_prldr .svg_anm {
 position: absolute;
-width: 41px;
-height: 41px;
+width: 71px;
+height: 71px;
 background: url(../images/pufff.svg) center center no-repeat;
-background-size:41px;    
+background-size:71px;    
 margin: -16px 0 0 -16px;}
 
 //end download spinner
@@ -107,6 +108,10 @@ body {
 .jSlots-wrapper {
 	overflow: hidden;
 	height: 182px;	
+}
+
+.fp-section {
+	overflow: hidden;
 }
 
 .icon {
@@ -250,7 +255,20 @@ body {
 
 //page
 
+
 //section-1
+
+.section-1 {
+	//background: url(../images/img-33.jpg);
+
+	.fp-tableCell {
+	//background: url(../images/img-33.jpg);
+	}
+
+	video {
+	//	background: url(../images/img-33.jpg);
+	}
+}
 
 .nav {	
 
@@ -379,7 +397,7 @@ body {
 //section-2
 
 .section-2 {
-	//background: url(../images/section-2-bg.jpg) no-repeat;
+	background: url(../images/section-2-bg.jpg) no-repeat;
 	background-size: cover;
 }
 
@@ -389,9 +407,7 @@ body {
 	font-size: 34px;
 	font-weight: 700;
 	text-align: center;
-
 	display: flex;
-	align-items: center;
 
 	&:before {
 		content:"-";
@@ -440,37 +456,108 @@ body {
 	display: none;
 }
 
-.icon-1 {
-	background: url(../images/icon-1.png) no-repeat;
-	width: 100%;		
-	//height: auto;
-	background-size: contain;
+.slot {
 
+	.icon {	
+		width: 100%;	
+	}
 }
 
-.icon-2 {
-	background: url(../images/icon-2.png) no-repeat;
-	width: 100%;	
-	//height: auto;
-	background-size: contain;
-	
-}
+.slot-1 {
 
-.icon-3 {
-	background: url(../images/icon-3.png) no-repeat;
-	width: 100%;	
-	//height: auto;
-	background-size: contain;
-	
-}
+		.icon-1 {
+			background: url(../images/model-1.png) no-repeat;
+			background-size: contain;
+		}
 
-.icon-4 {
-	background: url(../images/icon-4.png) no-repeat;
-	width: 100%;	
-	//height: auto;
-	background-size: contain;
-	
-}
+		.icon-2 {
+			background: url(../images/model-2.png) no-repeat;
+			background-size: contain;
+		}
+
+		.icon-3 {
+			background: url(../images/model-3.png) no-repeat;
+			background-size: contain;
+		}
+
+		.icon-4 {
+			background: url(../images/model-4.png) no-repeat;
+			background-size: contain;
+		}
+}	
+
+.slot-2 {	
+
+	.icon-1 {
+		background: url(../images/scene-1.png) no-repeat;
+		background-size: contain;
+	}
+
+	.icon-2 {
+		background: url(../images/scene-2.png) no-repeat;
+		background-size: contain;
+	}
+
+	.icon-3 {
+		background: url(../images/scene-3.png) no-repeat;
+		background-size: contain;
+	}
+
+	.icon-4 {
+		background: url(../images/scene-4.png) no-repeat;
+		background-size: contain;
+	}
+
+}	
+
+.slot-3 {
+
+	.icon-1 {
+		background: url(../images/cloth-1.png) no-repeat;
+		background-size: contain;
+	}
+
+	.icon-2 {
+		background: url(../images/cloth-2.png) no-repeat;
+		background-size: contain;
+	}
+
+	.icon-3 {
+		background: url(../images/cloth-3.png) no-repeat;
+		background-size: contain;
+	}
+
+	.icon-4 {
+		background: url(../images/cloth-4.png) no-repeat;
+		background-size: contain;
+	}
+
+}	
+
+.slot-4 {
+
+	.icon-1 {
+		background: url(../images/pose-1.png) no-repeat;
+		background-size: contain;
+	}
+
+	.icon-2 {
+		background: url(../images/pose-2.png) no-repeat;
+		background-size: contain;	
+	}
+
+	.icon-3 {
+		background: url(../images/pose-3.png) no-repeat;
+		background-size: contain;	
+		
+	}
+
+	.icon-4 {
+		background: url(../images/pose-4.png) no-repeat;
+		background-size: contain;
+	}
+
+}	
 
 .timer {
 	font-size: 80px;
@@ -501,6 +588,15 @@ body {
 
 		.flex-container {
 			justify-content: center;
+		}
+
+		a {
+			color: #fff;
+			text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+			}
 		}
 }
 

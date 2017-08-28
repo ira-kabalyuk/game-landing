@@ -14,7 +14,7 @@ $icon-font-path: '../fonts/';
 @import "_footer";
 @import "_bg-video";
 
-
+@import "_max-h-1080.scss";
 
 @import "_max-1025.scss";
 @import "_max-768.scss";
@@ -22,4 +22,6 @@ $icon-font-path: '../fonts/';
 @import "_max-667.scss";
 @import "_max-568.scss";
 @import "_max-540.scss";
+
+
 
